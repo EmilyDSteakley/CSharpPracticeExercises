@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpPracticeExercises
+namespace Strings
 {
-    class Program
+    class LongPressedName
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

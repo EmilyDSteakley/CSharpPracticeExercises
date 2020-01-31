@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{509C7866-22E3-4FBB-83E9-2DF264738BCB}</ProjectGuid>
+    <ProjectGuid>{9D9FE192-548C-4649-8354-E6430173007F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpPracticeExercises</RootNamespace>
-    <AssemblyName>CSharpPracticeExercises</AssemblyName>
+    <RootNamespace>Math</RootNamespace>
+    <AssemblyName>Math</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maximum69Number.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
