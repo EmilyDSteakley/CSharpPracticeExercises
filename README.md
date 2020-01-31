@@ -33,7 +33,7 @@
 
 ###### Math:
 
-- [ ] Subtract the Product and Sum of Digits of an Integer
+- [X] Subtract the Product and Sum of Digits of an Integer - 31Jan20
 - [ ] Maximum 69 Number
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
