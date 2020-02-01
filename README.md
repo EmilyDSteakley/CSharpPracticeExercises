@@ -33,7 +33,9 @@
 
 ###### Math:
 
-- [X] Subtract the Product and Sum of Digits of an Integer - 31Jan20
+- [X] Subtract the Product and Sum of Digits of an Integer - January 31, 2020
+- [X] Find Numbers with Even Number of Digits - January 31, 2020
+- [ ] Toeplitz Matrix
 - [ ] Maximum 69 Number
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
