@@ -1,0 +1,6 @@
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\bin\Debug\LeetCodeArrays.exe.config
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\bin\Debug\LeetCodeArrays.exe
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\bin\Debug\LeetCodeArrays.pdb
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\obj\Debug\LeetCodeArrays.csprojAssemblyReference.cache
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\obj\Debug\LeetCodeArrays.exe
+C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeArrays\obj\Debug\LeetCodeArrays.pdb
