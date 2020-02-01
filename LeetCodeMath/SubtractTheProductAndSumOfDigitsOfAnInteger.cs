@@ -11,6 +11,7 @@ namespace LeetCodeMath
         public static int SubtractProductAndSum(int n)
         {
             // ---------------------------------------- Problem ----------------------------------------
+
             // 1281. Subtract the Product and Sum of Digits of an Integer
             // Given an integer number n, return the difference between the product of its digits and the sum of its digits.
 
@@ -64,6 +65,26 @@ namespace LeetCodeMath
 
             // 5. Return difference
             return difference;
+
+            // 40 ms <-- Beats 73.98%
+            // Solved January 31, 2020
+
+
+
+            // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+
+            string nums = n.ToString();
+            int product = 1;
+            int sum = 0;
+            int currentNumber = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                currentNumber = int.Parse(nums[i].ToString());
+                product *= currentNumber;
+                sum += currentNumber;
+            }
+
+            return product - sum;
         }
     }
 }
