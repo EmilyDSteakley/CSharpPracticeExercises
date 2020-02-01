@@ -38,53 +38,67 @@ namespace LeetCodeMath
 
             // ---------------------------------------- My Solution ----------------------------------------
 
-            // 1. Convert int to byte array
-            var numbers = new Stack<byte>();
-
-            for (; n > 0; n /= 10)
-                numbers.Push(Convert.ToByte(n % 10));
-
-            var nArray = numbers.ToArray();
-
-            // 2. Calculate sum of bytes in array
-            var sum = 0;
-            foreach (byte b in nArray)
-            {
-                sum += b;
-            }
-
-            // 3. Calculate product of bytes in array
-            var product = 1;
-            foreach (byte b in nArray)
-            {
-                product *= b;
-            }
-
-            // 4. Calculate difference between product and sum
-            var difference = product - sum;
-
-            // 5. Return difference
-            return difference;
-
-            // 40 ms <-- Beats 73.98%
-            // Solved January 31, 2020
-
-
-
-            // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
-
-            string nums = n.ToString();
             int product = 1;
             int sum = 0;
-            int currentNumber = 0;
-            for (int i = 0; i < nums.Length; i++)
+            int mod = 0;
+
+            while(n != 0)
             {
-                currentNumber = int.Parse(nums[i].ToString());
-                product *= currentNumber;
-                sum += currentNumber;
+                mod = n % 10;
+                n = n / 10;
+                product *= mod;
+                sum += mod;
             }
 
-            return product - sum;
+            return (product - sum);
+
+            //// 1. Convert int to byte array
+            //var numbers = new Stack<byte>();
+
+            //for (; n > 0; n /= 10)
+            //    numbers.Push(Convert.ToByte(n % 10));
+
+            //var nArray = numbers.ToArray();
+
+            //// 2. Calculate sum of bytes in array
+            //var sum = 0;
+            //foreach (byte b in nArray)
+            //{
+            //    sum += b;
+            //}
+
+            //// 3. Calculate product of bytes in array
+            //var product = 1;
+            //foreach (byte b in nArray)
+            //{
+            //    product *= b;
+            //}
+
+            //// 4. Calculate difference between product and sum
+            //var difference = product - sum;
+
+            //// 5. Return difference
+            //return difference;
+
+            //// 40 ms <-- Beats 73.98%
+            //// Solved January 31, 2020
+
+
+
+            //// ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+
+            //string nums = n.ToString();
+            //int product = 1;
+            //int sum = 0;
+            //int currentNumber = 0;
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    currentNumber = int.Parse(nums[i].ToString());
+            //    product *= currentNumber;
+            //    sum += currentNumber;
+            //}
+
+            //return product - sum;
         }
     }
 }
