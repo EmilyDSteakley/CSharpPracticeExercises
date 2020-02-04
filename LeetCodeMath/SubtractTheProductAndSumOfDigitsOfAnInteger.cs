@@ -38,50 +38,36 @@ namespace LeetCodeMath
 
             // ---------------------------------------- My Solution ----------------------------------------
 
-            int product = 1;
-            int sum = 0;
-            int mod = 0;
+            // 1. Convert int to byte array
+            var numbers = new Stack<byte>();
 
-            while(n != 0)
+            for (; n > 0; n /= 10)
+                numbers.Push(Convert.ToByte(n % 10));
+
+            var nArray = numbers.ToArray();
+
+            // 2. Calculate sum of bytes in array
+            var sum = 0;
+            foreach (byte b in nArray)
             {
-                mod = n % 10;
-                n = n / 10;
-                product *= mod;
-                sum += mod;
+                sum += b;
             }
 
-            return (product - sum);
+            // 3. Calculate product of bytes in array
+            var product = 1;
+            foreach (byte b in nArray)
+            {
+                product *= b;
+            }
 
-            //// 1. Convert int to byte array
-            //var numbers = new Stack<byte>();
+            // 4. Calculate difference between product and sum
+            var difference = product - sum;
 
-            //for (; n > 0; n /= 10)
-            //    numbers.Push(Convert.ToByte(n % 10));
+            // 5. Return difference
+            return difference;
 
-            //var nArray = numbers.ToArray();
-
-            //// 2. Calculate sum of bytes in array
-            //var sum = 0;
-            //foreach (byte b in nArray)
-            //{
-            //    sum += b;
-            //}
-
-            //// 3. Calculate product of bytes in array
-            //var product = 1;
-            //foreach (byte b in nArray)
-            //{
-            //    product *= b;
-            //}
-
-            //// 4. Calculate difference between product and sum
-            //var difference = product - sum;
-
-            //// 5. Return difference
-            //return difference;
-
-            //// 40 ms <-- Beats 73.98%
-            //// Solved January 31, 2020
+            // 40 ms <-- Beats 73.98%
+            // Solved January 31, 2020
 
 
 
