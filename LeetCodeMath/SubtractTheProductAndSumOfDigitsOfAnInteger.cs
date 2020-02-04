@@ -73,18 +73,18 @@ namespace LeetCodeMath
 
             //// ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
 
-            //string nums = n.ToString();
-            //int product = 1;
-            //int sum = 0;
-            //int currentNumber = 0;
-            //for (int i = 0; i < nums.Length; i++)
-            //{
-            //    currentNumber = int.Parse(nums[i].ToString());
-            //    product *= currentNumber;
-            //    sum += currentNumber;
-            //}
+            string nums = n.ToString();
+            int product = 1;
+            int sum = 0;
+            int currentNumber = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                currentNumber = int.Parse(nums[i].ToString());
+                product *= currentNumber;
+                sum += currentNumber;
+            }
 
-            //return product - sum;
+            return product - sum;
         }
     }
 }
