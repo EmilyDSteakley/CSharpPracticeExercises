@@ -1,5 +1,5 @@
 # CSharpPracticeExercises
-#### My practice solutions to C# exercises.
+#### My solutions to C# exercises.
 
 ### LeetCode
 -------------------------------
@@ -43,6 +43,9 @@
 - [ ] Happy Number
 - [ ] Power of Two
 - [ ] X of a Kind in a Deck of Cards
+
+
+
 
 
 ### HackerRank
