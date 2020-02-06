@@ -71,7 +71,7 @@ namespace LeetCodeMath
 
 
 
-            //// ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+            // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
 
             string nums = n.ToString();
             int product = 1;
