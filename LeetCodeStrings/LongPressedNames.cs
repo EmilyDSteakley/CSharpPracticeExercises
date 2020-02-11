@@ -8,5 +8,6 @@ namespace LeetCodeStrings
 {
     class LongPressedNames
     {
+
     }
 }
