@@ -26,6 +26,18 @@ namespace LeetCodeMath
             Console.WriteLine($"Example 1: {productSumCalc.SubtractProductAndSum(234)}");
             Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(35252)}");
             // Solved January 31, 2020
+
+
+            // 9.Palindrome Number
+            Console.WriteLine("9. Palindrome Number");
+            var _9_example1 = 121;
+            var _9_example2 = -121;
+            var _9_example3 = 10;
+            var numberChecker = new PalindromeNumber();
+            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example1)}");
+            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example2)}");
+            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example3)}");
+            // Solved Feburary 11, 2020
         }
     }
 }

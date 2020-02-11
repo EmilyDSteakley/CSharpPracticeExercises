@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodeStrings
+namespace LeetCodeMath
 {
     class Program
     {
@@ -18,6 +18,7 @@ namespace LeetCodeStrings
             stringReverser.ReverseStrings(_344_example1);
             stringReverser.ReverseStrings(_344_example2);
             // Solved February 10, 2020
+
 
             // 557. Reverse Words in a String III
             Console.WriteLine("557. Reverse Words in a String III");
