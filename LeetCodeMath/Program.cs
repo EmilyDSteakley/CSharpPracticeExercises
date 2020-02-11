@@ -12,10 +12,10 @@ namespace LeetCodeMath
         {
             // 1295. Find Numbers with Even Number of Digits
             Console.WriteLine("1295. Find Numbers with Even Number of Digits");
-            var example1 = new int[] { 12, 345, 2, 6, 7896 };
-            var example2 = new int[] { 555, 901, 482, 1771 };
-            Console.WriteLine($"Example 1: {FindNumbersWithEvenNumberOfDigits.FindNumbers(example1)}");
-            Console.WriteLine($"Example 2: {FindNumbersWithEvenNumberOfDigits.FindNumbers(example2)}\n\n");
+            var _1295_example1 = new int[] { 12, 345, 2, 6, 7896 };
+            var _1295_example2 = new int[] { 555, 901, 482, 1771 };
+            Console.WriteLine($"Example 1: {FindNumbersWithEvenNumberOfDigits.FindNumbers(_1295_example1)}");
+            Console.WriteLine($"Example 2: {FindNumbersWithEvenNumberOfDigits.FindNumbers(_1295_example2)}\n\n");
             // Solved January 31, 2020
 
 
