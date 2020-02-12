@@ -9,7 +9,6 @@
 - [ ] Two Sum
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
-- [X] Find Numbers with Even Number of Digits
 - [ ] Minimum Time Visiting All Points
 - [ ] Find N Unitque Integers Sum up to Zero
 - [ ] Fibonacci Number
@@ -21,10 +20,11 @@
 
 - [ ] Unique Morse Code Words
 - [ ] Robot Return to Origin
-- [X] Reverse String
-- [X] Reverse Words in a String III
+- [X] Reverse String - February 10, 2020
+- [X] Reverse Words in a String III - February 11, 2020
 - [ ] Goat Latin
 - [ ] Roman to Integer
+- [X] Valid Palindrome - February 11, 2020
 - [ ] Valid Palindrome II
 - [ ] Valid Parentheses
 - [ ] Long Pressed Name
@@ -38,7 +38,7 @@
 - [ ] Maximum 69 Number
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
-- [X] Palindrome Number
+- [X] Palindrome Number - February 11, 2020
 - [ ] Valid Perfect Square
 - [ ] Happy Number
 - [ ] Power of Two
