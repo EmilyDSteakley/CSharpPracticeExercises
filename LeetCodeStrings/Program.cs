@@ -19,14 +19,22 @@ namespace LeetCodeStrings
             stringReverser.ReverseStrings(_344_example2);
             // Solved February 10, 2020
 
+            Console.WriteLine();
 
             // 557. Reverse Words in a String III
             Console.WriteLine("557. Reverse Words in a String III");
             var _557_example1 = "Let's take LeetCode contest";
             var reverseWordsInString = new ReverseWordsInAStringIII();
-            Console.WriteLine(reverseWordsInString.ReverseWords(_557_example1));
+            Console.WriteLine($"Example 1: {reverseWordsInString.ReverseWords(_557_example1)}\n");
 
 
+            // 125. Valid Palindrome
+            Console.WriteLine("125. Valid Palindrome");
+            var _125_example1 = "A man, a plan, a canal: Panama";
+            var _125_example2 = "race a car";
+            var paliCheck = new ValidPalindrome();
+            Console.WriteLine($"Example 1: {paliCheck.IsPalindrome(_125_example1)}");
+            Console.WriteLine($"Example 2: {paliCheck.IsPalindrome(_125_example2)}");
         }
     }
 }

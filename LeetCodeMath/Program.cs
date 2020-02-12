@@ -24,7 +24,7 @@ namespace LeetCodeMath
             Console.WriteLine("1281. Subtract the Product and Sum of Digits of an Integer");
             var productSumCalc = new SubtractTheProductAndSumOfDigitsOfAnInteger();
             Console.WriteLine($"Example 1: {productSumCalc.SubtractProductAndSum(234)}");
-            Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(35252)}");
+            Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(35252)}\n\n");
             // Solved January 31, 2020
 
 
