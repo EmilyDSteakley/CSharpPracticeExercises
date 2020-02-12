@@ -1,6 +1,0 @@
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\bin\Debug\LeetCodeMath.exe.config
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\bin\Debug\LeetCodeMath.exe
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\bin\Debug\LeetCodeMath.pdb
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\obj\Debug\LeetCodeMath.csprojAssemblyReference.cache
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\obj\Debug\LeetCodeMath.exe
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeMath\obj\Debug\LeetCodeMath.pdb
