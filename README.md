@@ -9,7 +9,7 @@
 - [ ] Two Sum
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
-- [ ] Find Numbers with Even Number of Digits
+- [X] Find Numbers with Even Number of Digits
 - [ ] Minimum Time Visiting All Points
 - [ ] Find N Unitque Integers Sum up to Zero
 - [ ] Fibonacci Number
@@ -21,8 +21,8 @@
 
 - [ ] Unique Morse Code Words
 - [ ] Robot Return to Origin
-- [ ] Reverse String
-- [ ] Reverse Words in a String II
+- [X] Reverse String
+- [X] Reverse Words in a String III
 - [ ] Goat Latin
 - [ ] Roman to Integer
 - [ ] Valid Palindrome II
@@ -38,7 +38,7 @@
 - [ ] Maximum 69 Number
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
-- [ ] Palindrome Number
+- [X] Palindrome Number
 - [ ] Valid Perfect Square
 - [ ] Happy Number
 - [ ] Power of Two
