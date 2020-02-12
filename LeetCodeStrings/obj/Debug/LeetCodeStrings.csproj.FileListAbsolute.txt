@@ -1,6 +1,0 @@
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\bin\Debug\LeetCodeStrings.exe.config
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\bin\Debug\LeetCodeStrings.exe
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\bin\Debug\LeetCodeStrings.pdb
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\obj\Debug\LeetCodeStrings.csprojAssemblyReference.cache
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\obj\Debug\LeetCodeStrings.exe
-C:\Users\emily\Desktop\C#\CSharpPracticeExercises\LeetCodeStrings\obj\Debug\LeetCodeStrings.pdb
