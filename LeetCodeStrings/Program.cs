@@ -35,6 +35,12 @@ namespace LeetCodeStrings
             var paliCheck = new ValidPalindrome();
             Console.WriteLine($"Example 1: {paliCheck.IsPalindrome(_125_example1)}");
             Console.WriteLine($"Example 2: {paliCheck.IsPalindrome(_125_example2)}");
-        }
-    }
-}
+
+
+
+
+        } // Main method
+
+    } // Program class
+
+} // LeetCodeStrings namespace

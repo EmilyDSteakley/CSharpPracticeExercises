@@ -28,16 +28,37 @@ namespace LeetCodeMath
             // Solved January 31, 2020
 
 
-            // 9.Palindrome Number
+            // 9. Palindrome Number
             Console.WriteLine("9. Palindrome Number");
             var _9_example1 = 121;
             var _9_example2 = -121;
             var _9_example3 = 10;
             var numberChecker = new PalindromeNumber();
             Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example1)}");
-            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example2)}");
-            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example3)}");
+            Console.WriteLine($"Example 2: {numberChecker.IsPalindrome(_9_example2)}");
+            Console.WriteLine($"Example 3: {numberChecker.IsPalindrome(_9_example3)}");
             // Solved Feburary 11, 2020
-        }
-    }
-}
+
+
+            // 1323. Maximum 69 Number
+            Console.WriteLine("1323. Maximum 69 Number");
+            var _1323_example1 = 9669;
+            var _1323_example2 = 9996;
+            var _1323_example3 = 9999;
+            var maxNumChecker = new Maximum69Number();
+            Console.WriteLine($"Example 1: {maxNumChecker.Max69Number(_1323_example1)}");
+            Console.WriteLine($"Example 2: {maxNumChecker.Max69Number(_1323_example2)}");
+            Console.WriteLine($"Example 3: {maxNumChecker.Max69Number(_1323_example3)}");
+
+
+
+
+
+
+
+
+        } // Main method
+
+    } // Program class
+
+} // LeetCodeMath namespace
