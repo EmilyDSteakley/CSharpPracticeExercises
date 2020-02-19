@@ -44,10 +44,11 @@ namespace LeetCodeStrings
             
             string newStr = new string(chars);
             return test == newStr;
-
-            // 476 ms <-- Beats 85.75%
-            // Solved February 11, 2020
         }
+        // 476 ms <-- Beats 85.75%
+        // Solved February 11, 2020
+
+
 
         // ---------------------------------------- 60 ms Solution on LeetCode ----------------------------------------
         public bool IsPalindrome60(string s)
@@ -66,7 +67,6 @@ namespace LeetCodeStrings
                     return false;
             }
             return true;
-
         }
     }
 }
