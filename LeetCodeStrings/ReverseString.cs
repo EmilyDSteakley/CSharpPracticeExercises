@@ -40,10 +40,10 @@ namespace LeetCodeStrings
                 a--;
             }
             Console.WriteLine(s);
-
-            // 392 ms <-- Beats 45.34%
-            // Solved February 10, 2020
         }
+        // 392 ms <-- Beats 45.34%
+        // Solved February 10, 2020
+
 
 
         // ---------------------------------------- 348 ms Solution on LeetCode ----------------------------------------
