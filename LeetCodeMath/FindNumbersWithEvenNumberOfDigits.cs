@@ -55,10 +55,12 @@ namespace LeetCodeMath
             }
 
             return count;
-
-            // 84 ms <-- Beats 99.62%
-            // Solved January 31, 2020
         }
+
+        // 84 ms <-- Beats 99.62%
+        // Solved January 31, 2020
+
+
 
         // ---------------------------------------- 76 ms Solution on LeetCode ----------------------------------------
         public int FindNumbers76(int[] nums)
