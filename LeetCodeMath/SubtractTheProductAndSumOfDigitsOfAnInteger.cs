@@ -64,10 +64,11 @@ namespace LeetCodeMath
 
             // 5. Return difference
             return difference;
-
-            // 40 ms <-- Beats 73.98%
-            // Solved January 31, 2020
         }
+        // 40 ms <-- Beats 73.98%
+        // Solved January 31, 2020
+
+
 
         // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
         public int SubtractProductAndSum24(int n)
