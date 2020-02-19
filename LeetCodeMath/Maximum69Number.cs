@@ -41,19 +41,63 @@ namespace LeetCodeMath
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-        public static int Maximum69Numberm(int num)
+        public int Max69Number(int num)
         {
-            // I SOLVED IT IN PYTHON!!!
+            string numStr = num.ToString();
+            var numArr = new int[numStr.Length];
+            var pos = numStr.Length - 1;
+            int digit;
+            
+            while (num > 0)
+            {
+                digit = num % 10;
+                numArr[pos] = digit;
+                num /= 10;
+                pos--;
+            }
+
+            for (int i = 0; i < numArr.Length; i++)
+            {
+                if (numArr[i] == 6)
+                {
+                    numArr[i] = 9;
+                    return Convert.ToInt32(string.Join("", numArr));
+                }
+            }
+            return Convert.ToInt32(string.Join("", numArr));
+        }
+        // 44 ms <-- Beats 35.46%
+        // Solved February 19, 2020
 
 
 
+        // ---------------------------------------- 40 ms Solution on LeetCode ----------------------------------------
+        public int Maximum69Number40(int num)
+        {
+            StringBuilder sb = new StringBuilder(num.ToString());
 
-            return 5;
-
-            // 40 ms <-- Beats 73.98%
-            // Solved January 31, 2020
+            for (int i = 0; i < sb.Length; i++)
+            {
+                if (sb[i] == '6')
+                {
+                    sb[i] = '9';
+                    break;
+                }
+            }
+            return Int32.Parse(sb.ToString());
         }
 
-        // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+
+
+        // ---------------------------------------- 28 ms Solution on LeetCode ----------------------------------------
+        public int Maximum69Number28(int num)
+        {
+            // znajdę pierwszą 6 od lewej i zamienię na 9.
+            string num2 = num.ToString();
+            int pierwsza6 = num2.IndexOf('6');
+            if (pierwsza6 >= 0)
+                num2 = num2.Remove(pierwsza6, 1).Insert(pierwsza6, "9");
+            return int.Parse(num2);
+        }
     }
 }
