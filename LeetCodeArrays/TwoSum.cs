@@ -42,7 +42,6 @@ namespace LeetCodeArrays
             }
             return ans;
         }
-
         // 388 ms <-- Beats 49.99%
         // Solved February 18, 2020
 
