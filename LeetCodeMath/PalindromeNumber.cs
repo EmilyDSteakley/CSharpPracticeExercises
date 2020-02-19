@@ -47,9 +47,10 @@ namespace LeetCodeMath
 
             return (orig == n);
         }
-
         // 52 ms <-- Beats 97.92%
         // Solved February 11, 2020
+
+
 
         // ---------------------------------------- 40 ms Solution on LeetCode ----------------------------------------
         public bool IsPalindrome40(int x)
