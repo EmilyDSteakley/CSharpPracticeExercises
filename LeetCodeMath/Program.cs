@@ -36,7 +36,7 @@ namespace LeetCodeMath
             var numberChecker = new PalindromeNumber();
             Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example1)}");
             Console.WriteLine($"Example 2: {numberChecker.IsPalindrome(_9_example2)}");
-            Console.WriteLine($"Example 3: {numberChecker.IsPalindrome(_9_example3)}");
+            Console.WriteLine($"Example 3: {numberChecker.IsPalindrome(_9_example3)}\n\n");
             // Solved Feburary 11, 2020
 
 
