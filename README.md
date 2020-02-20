@@ -6,7 +6,7 @@
 
 ###### Arrays:
 
-- [ ] Two Sum
+- [X] Two Sum
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
@@ -25,7 +25,7 @@
 - [ ] Goat Latin
 - [ ] Roman to Integer
 - [X] Valid Palindrome - February 11, 2020
-- [ ] Valid Palindrome II
+- [X] Valid Palindrome II
 - [ ] Valid Parentheses
 - [ ] Long Pressed Name
 
@@ -35,7 +35,7 @@
 - [X] Subtract the Product and Sum of Digits of an Integer - January 31, 2020
 - [X] Find Numbers with Even Number of Digits - January 31, 2020
 - [ ] Toeplitz Matrix
-- [ ] Maximum 69 Number
+- [X] Maximum 69 Number
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
 - [X] Palindrome Number - February 11, 2020
