@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HR_W_SockMerchant.cs" />
     <Compile Include="LC_M_FindNumbersWithEvenNumberOfDigits.cs" />
     <Compile Include="LC_S_LongPressedNames.cs" />
     <Compile Include="LC_M_Maximum69Number.cs" />
