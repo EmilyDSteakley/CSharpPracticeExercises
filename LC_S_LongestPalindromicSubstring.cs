@@ -40,42 +40,42 @@ namespace CSharpPracticeExercises
 
 
 
-            string S = "bababad";
-            int n = S.Length;
-            char[] arr = S.ToCharArray();
+            //string S = "bababad";
+            //int n = S.Length;
+            //char[] arr = S.ToCharArray();
 
-            for (int i = 0; i < S.Length; i++)
-            {
-                int lastIdx = Array.LastIndexOf(arr, arr[i]);
+            //for (int i = 0; i < S.Length; i++)
+            //{
+            //    int lastIdx = Array.LastIndexOf(arr, arr[i]);
 
-                if (i != lastIdx)
-                {
-                    int origI = i;
-                    int origL = lastIdx;
-                    while ((lastIdx - i) > 1)
-                    {
-                        if ((arr[i + 1]) == (arr[lastIdx - 1]))
-                        {
-                            i += 1;
-                            lastIdx -= 1;
-                            Console.WriteLine($"i is {i}, lastIdx is {lastIdx}");
-                            continue;
-                        }
-                    }
-                    string palindrome = S.Substring(origI, (origL + 1));
-                    Console.WriteLine($"The palindrome is {palindrome}");
-                }
-                break;
+            //    if (i != lastIdx)
+            //    {
+            //        int origI = i;
+            //        int origL = lastIdx;
+            //        while ((lastIdx - i) > 1)
+            //        {
+            //            if ((arr[i + 1]) == (arr[lastIdx - 1]))
+            //            {
+            //                i += 1;
+            //                lastIdx -= 1;
+            //                Console.WriteLine($"i is {i}, lastIdx is {lastIdx}");
+            //                continue;
+            //            }
+            //        }
+            //        string palindrome = S.Substring(origI, (origL + 1));
+            //        Console.WriteLine($"The palindrome is {palindrome}");
+            //    }
+            //    break;
 
+                return "incomplete";
 
-
-            }
-            // XXX ms <-- Beats 45.34%
+            //}
+            // XXX ms <-- Beats XX.XX%
             // Solved February XX, 2020
         }
 
 
-        // ---------------------------------------- 348 ms Solution on LeetCode ----------------------------------------
+        // ---------------------------------------- XXX ms Solution on LeetCode ----------------------------------------
 
 
 
