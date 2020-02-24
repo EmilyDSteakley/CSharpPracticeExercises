@@ -17,16 +17,29 @@ namespace CSharpPracticeExercises
             //Console.WriteLine(counter.countingValleys(n1, s1));
             //Console.WriteLine(counter.countingValleys(n2, s2));
 
-            //var zeroSum = new LC_A_FindNUniqueIntegersSumUpToZero();
-            //Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(5))}]");
-            //Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(3))}]");
-            //Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(1))}]");
+
+            // 1204. Find N Unique Integers Sum up to Zero
+            Console.WriteLine("1204. Find N Unique Integers Sum up to Zero");
+            var _1204_example1 = 5;
+            var _1204_example2 = 3;
+            var _1204_example3 = 1;
+            var zeroSum = new LC_A_FindNUniqueIntegersSumUpToZero();
+            Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example1))}]");
+            Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example2))}]");
+            Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example3))}]");
+            // Solved February 22, 2020
 
 
-
-
-
-
+            // Warm-up Challenges - Sock Merchant
+            Console.WriteLine("Warm-up Challenges - Sock Merchant");
+            var sock_n1 = 7;
+            var sock_ar1 = new[] { 1, 2, 1, 2, 1, 3, 2 };
+            var sock_n2 = 9;
+            var sock_ar2 = new[] { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
+            var sockMerchant = new HR_W_SockMerchant();
+            Console.WriteLine($"Example 1: {sockMerchant.sockMerchant(sock_n1, sock_ar1)}");
+            Console.WriteLine($"Example 2: {sockMerchant.sockMerchant(sock_n2, sock_ar2)}");
+            // Solved February 20, 2020
 
 
             // 1323. Maximum 69 Number
@@ -39,11 +52,6 @@ namespace CSharpPracticeExercises
             Console.WriteLine($"Example 2: {maxNumChecker.Maximum69Number(_1323_example2)}");
             Console.WriteLine($"Example 3: {maxNumChecker.Maximum69Number(_1323_example3)}");
             // Solved February 19, 2020
-
-
-
-
-
 
 
             // 1. Two Sum
@@ -116,9 +124,11 @@ namespace CSharpPracticeExercises
 
             // 1281. Subtract the Product and Sum of Digits of an Integer
             Console.WriteLine("1281. Subtract the Product and Sum of Digits of an Integer");
+            var _1281_example1 = 234;
+            var _1281_example2 = 53252;
             var productSumCalc = new LC_M_SubtractTheProductAndSumOfDigitsOfAnInteger();
-            Console.WriteLine($"Example 1: {productSumCalc.SubtractProductAndSum(234)}");
-            Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(35252)}\n\n");
+            Console.WriteLine($"Example 1: {productSumCalc.SubtractProductAndSum(_1281_example1)}");
+            Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(_1281_example2)}\n\n");
             // Solved January 31, 2020
 
 
