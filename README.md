@@ -40,7 +40,6 @@
 - [X] Maximum 69 Number - February 19, 2020
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
-- [X] Palindrome Number - February 11, 2020
 - [ ] Valid Perfect Square
 - [ ] Happy Number
 - [ ] Power of Two
