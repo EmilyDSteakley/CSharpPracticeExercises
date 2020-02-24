@@ -46,8 +46,12 @@ namespace CSharpPracticeExercises
 
 
 
-
-
+            // 1. Two Sum
+            Console.WriteLine("Two Sum");
+            var _1_nums = new[] { 2, 7, 11, 15 };
+            var _1_target = 9;
+            var findSum = new LC_A_TwoSum();
+            Console.WriteLine($"Example 1: [{string.Join(", ", findSum.TwoSum(_1_nums, _1_target))}]");
 
 
             // 680. Valid Palindrome II
