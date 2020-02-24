@@ -6,11 +6,11 @@
 
 ###### Arrays:
 
-- [X] Two Sum
+- [X] Two Sum - Febuary 28, 2020
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
-- [ ] Find N Unitque Integers Sum up to Zero
+- [X] Find N Unitque Integers Sum up to Zero - February 22, 2020
 - [ ] Fibonacci Number
 - [ ] Find Common Characters
 - [ ] Two Sum II - Input array is sorted
@@ -25,17 +25,19 @@
 - [ ] Goat Latin
 - [ ] Roman to Integer
 - [X] Valid Palindrome - February 11, 2020
-- [X] Valid Palindrome II
+- [X] Valid Palindrome II - February 18, 2020
 - [ ] Valid Parentheses
 - [ ] Long Pressed Name
+- [ ] Longest Palindromic Substring
 
 
 ###### Math:
 
 - [X] Subtract the Product and Sum of Digits of an Integer - January 31, 2020
 - [X] Find Numbers with Even Number of Digits - January 31, 2020
+- [X] Palindrome Number - February 11, 2020
 - [ ] Toeplitz Matrix
-- [X] Maximum 69 Number
+- [X] Maximum 69 Number - February 19, 2020
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
 - [X] Palindrome Number - February 11, 2020
@@ -53,7 +55,7 @@
 
 ###### Warm-up Challenges:
 
-- [ ] Sock Merchant (Easy)
+- [X] Sock Merchant (Easy) - Februaru 20, 2020
 - [ ] Counting Valleys (Easy)
 - [ ] Jumping on the Clouds (Easy)
 - [ ] Repeated String (Easy)
