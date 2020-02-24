@@ -6,7 +6,7 @@
 
 ###### Arrays:
 
-- [X] Two Sum - Febuary 28, 2020
+- [X] Two Sum - February 18, 2020
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
@@ -55,7 +55,7 @@
 
 ###### Warm-up Challenges:
 
-- [X] Sock Merchant (Easy) - Februaru 20, 2020
+- [X] Sock Merchant (Easy) - February 20, 2020
 - [ ] Counting Valleys (Easy)
 - [ ] Jumping on the Clouds (Easy)
 - [ ] Repeated String (Easy)
