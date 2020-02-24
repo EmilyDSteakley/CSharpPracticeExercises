@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="HR_W_CountingValleys.cs" />
     <Compile Include="HR_W_SockMerchant.cs" />
+    <Compile Include="LC_A_FibonacciNumber.cs" />
     <Compile Include="LC_A_FindNUniqueIntegersSumUpToZero.cs" />
     <Compile Include="LC_M_FindNumbersWithEvenNumberOfDigits.cs" />
     <Compile Include="LC_S_LongestPalindromicSubstring.cs" />
     <Compile Include="LC_S_LongPressedNames.cs" />
     <Compile Include="LC_M_Maximum69Number.cs" />
     <Compile Include="LC_M_PalindromeNumber.cs" />
+    <Compile Include="LC_A_PascalsTriangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LC_S_ReverseString.cs" />

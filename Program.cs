@@ -26,7 +26,7 @@ namespace CSharpPracticeExercises
             var zeroSum = new LC_A_FindNUniqueIntegersSumUpToZero();
             Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example1))}]");
             Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example2))}]");
-            Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example3))}]");
+            Console.WriteLine($"[{string.Join(", ", zeroSum.SumZero(_1204_example3))}]\n\n");
             // Solved February 22, 2020
 
 
@@ -38,7 +38,7 @@ namespace CSharpPracticeExercises
             var sock_ar2 = new[] { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
             var sockMerchant = new HR_W_SockMerchant();
             Console.WriteLine($"Example 1: {sockMerchant.sockMerchant(sock_n1, sock_ar1)}");
-            Console.WriteLine($"Example 2: {sockMerchant.sockMerchant(sock_n2, sock_ar2)}");
+            Console.WriteLine($"Example 2: {sockMerchant.sockMerchant(sock_n2, sock_ar2)}\n\n");
             // Solved February 20, 2020
 
 
@@ -50,16 +50,16 @@ namespace CSharpPracticeExercises
             var maxNumChecker = new LC_M_Maximum69Number();
             Console.WriteLine($"Example 1: {maxNumChecker.Maximum69Number(_1323_example1)}");
             Console.WriteLine($"Example 2: {maxNumChecker.Maximum69Number(_1323_example2)}");
-            Console.WriteLine($"Example 3: {maxNumChecker.Maximum69Number(_1323_example3)}");
+            Console.WriteLine($"Example 3: {maxNumChecker.Maximum69Number(_1323_example3)}\n\n");
             // Solved February 19, 2020
 
 
             // 1. Two Sum
-            Console.WriteLine("Two Sum");
+            Console.WriteLine("1. Two Sum");
             var _1_nums = new[] { 2, 7, 11, 15 };
             var _1_target = 9;
             var findSum = new LC_A_TwoSum();
-            Console.WriteLine($"Example 1: [{string.Join(", ", findSum.TwoSum(_1_nums, _1_target))}]");
+            Console.WriteLine($"Example 1: [{string.Join(", ", findSum.TwoSum(_1_nums, _1_target))}]\n\n");
 
 
             // 680. Valid Palindrome II
@@ -68,7 +68,7 @@ namespace CSharpPracticeExercises
             var _680_example2 = "abca";
             var paliCheck2 = new LC_S_ValidPalindromeII();
             Console.WriteLine($"Example 1: {paliCheck2.ValidPalindrome(_680_example1)}");
-            Console.WriteLine($"Example 2: {paliCheck2.ValidPalindrome(_680_example2)}");
+            Console.WriteLine($"Example 2: {paliCheck2.ValidPalindrome(_680_example2)}\n\n");
             // Solved February 18, 2020
 
 
@@ -76,7 +76,7 @@ namespace CSharpPracticeExercises
             Console.WriteLine("557. Reverse Words in a String III");
             var _557_example1 = "Let's take LeetCode contest";
             var reverseWordsInString = new LC_S_ReverseWordsInAStringIII();
-            Console.WriteLine($"Example 1: {reverseWordsInString.ReverseWords(_557_example1)}\n");
+            Console.WriteLine($"Example 1: {reverseWordsInString.ReverseWords(_557_example1)}\n\n");
             // Solved February 11, 2020
 
 
@@ -86,7 +86,7 @@ namespace CSharpPracticeExercises
             var _125_example2 = "race a car";
             var paliCheck = new LC_S_ValidPalindrome();
             Console.WriteLine($"Example 1: {paliCheck.IsPalindrome(_125_example1)}");
-            Console.WriteLine($"Example 2: {paliCheck.IsPalindrome(_125_example2)}\n");
+            Console.WriteLine($"Example 2: {paliCheck.IsPalindrome(_125_example2)}\n\n");
             // Solved February 11, 2020
 
 
@@ -109,6 +109,7 @@ namespace CSharpPracticeExercises
             var stringReverser = new LC_S_ReverseString();
             stringReverser.ReverseString(_344_example1);
             stringReverser.ReverseString(_344_example2);
+            Console.WriteLine("\n");
             // Solved February 10, 2020
 
 
