@@ -26,16 +26,7 @@ namespace CSharpPracticeExercises
 
 
 
-            // 9. Palindrome Number
-            Console.WriteLine("9. Palindrome Number");
-            var _9_example1 = 121;
-            var _9_example2 = -121;
-            var _9_example3 = 10;
-            var numberChecker = new LC_M_PalindromeNumber();
-            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example1)}");
-            Console.WriteLine($"Example 2: {numberChecker.IsPalindrome(_9_example2)}");
-            Console.WriteLine($"Example 3: {numberChecker.IsPalindrome(_9_example3)}\n\n");
-            // Solved Feburary 11, 2020
+
 
 
             // 1323. Maximum 69 Number
@@ -51,6 +42,22 @@ namespace CSharpPracticeExercises
 
 
 
+
+
+
+
+
+
+
+
+            // 680. Valid Palindrome II
+            Console.WriteLine("680. Valid Palindrome II");
+            var _680_example1 = "aba";
+            var _680_example2 = "abca";
+            var paliCheck2 = new LC_S_ValidPalindromeII();
+            Console.WriteLine($"Example 1: {paliCheck2.ValidPalindrome(_680_example1)}");
+            Console.WriteLine($"Example 2: {paliCheck2.ValidPalindrome(_680_example2)}");
+            // Solved February 18, 2020
 
 
             // 557. Reverse Words in a String III
@@ -71,18 +78,16 @@ namespace CSharpPracticeExercises
             // Solved February 11, 2020
 
 
-            // 680. Valid Palindrome II
-            Console.WriteLine("680. Valid Palindrome II");
-            var _680_example1 = "aba";
-            var _680_example2 = "abca";
-            var paliCheck2 = new LC_S_ValidPalindromeII();
-            Console.WriteLine($"Example 1: {paliCheck2.ValidPalindrome(_680_example1)}");
-            Console.WriteLine($"Example 2: {paliCheck2.ValidPalindrome(_680_example2)}");
-            // Solved February 18, 2020
-
-
-
-
+            // 9. Palindrome Number
+            Console.WriteLine("9. Palindrome Number");
+            var _9_example1 = 121;
+            var _9_example2 = -121;
+            var _9_example3 = 10;
+            var numberChecker = new LC_M_PalindromeNumber();
+            Console.WriteLine($"Example 1: {numberChecker.IsPalindrome(_9_example1)}");
+            Console.WriteLine($"Example 2: {numberChecker.IsPalindrome(_9_example2)}");
+            Console.WriteLine($"Example 3: {numberChecker.IsPalindrome(_9_example3)}\n\n");
+            // Solved Feburary 11, 2020
 
 
             // 344. Reverse String
