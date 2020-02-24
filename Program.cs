@@ -50,16 +50,8 @@ namespace CSharpPracticeExercises
             // Solved February 19, 2020
 
 
-            // 344. Reverse String
-            Console.WriteLine("344. Reverse String");
-            var _344_example1 = new[] { 'h', 'e', 'l', 'l', 'o' };
-            var _344_example2 = new[] { 'H', 'a', 'n', 'n', 'a', 'h' };
-            var stringReverser = new LC_S_ReverseString();
-            stringReverser.ReverseString(_344_example1);
-            stringReverser.ReverseString(_344_example2);
-            // Solved February 10, 2020
 
-            Console.WriteLine();
+
 
             // 557. Reverse Words in a String III
             Console.WriteLine("557. Reverse Words in a String III");
@@ -89,6 +81,20 @@ namespace CSharpPracticeExercises
             // Solved February 18, 2020
 
 
+
+
+
+
+            // 344. Reverse String
+            Console.WriteLine("344. Reverse String");
+            var _344_example1 = new[] { 'h', 'e', 'l', 'l', 'o' };
+            var _344_example2 = new[] { 'H', 'a', 'n', 'n', 'a', 'h' };
+            var stringReverser = new LC_S_ReverseString();
+            stringReverser.ReverseString(_344_example1);
+            stringReverser.ReverseString(_344_example2);
+            // Solved February 10, 2020
+
+
             // 1295. Find Numbers with Even Number of Digits
             Console.WriteLine("1295. Find Numbers with Even Number of Digits");
             var _1295_example1 = new int[] { 12, 345, 2, 6, 7896 };
@@ -105,7 +111,6 @@ namespace CSharpPracticeExercises
             Console.WriteLine($"Example 1: {productSumCalc.SubtractProductAndSum(234)}");
             Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(35252)}\n\n");
             // Solved January 31, 2020
-
 
 
         } // Main method
