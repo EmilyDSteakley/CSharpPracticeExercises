@@ -1,7 +1,7 @@
 # CSharpPracticeExercises
 #### My solutions to C# exercises.
 
-### LeetCode
+### LeetCode (LC)
 -------------------------------
 
 ###### Arrays:
@@ -49,7 +49,7 @@
 
 
 
-### HackerRank
+### HackerRank (HR)
 -------------------------------
 
 ###### Warm-up Challenges:
@@ -161,3 +161,21 @@
 - [ ] Time Complexity: Primality (Medium)
 - [ ] Friend Circle Queries (Medium)
 - [ ] Maximum Xor (Medium)
+
+
+
+
+
+### Cracking the Coding Interview (CCI)
+-------------------------------
+
+###### 1. Arrays and Lists:
+- [ ] Is Unique
+
+
+###### 2. Linked Lists:
+- [ ] Remove Dups
+
+
+###### 3. Stacks and Queues:
+- [ ] Three in One
