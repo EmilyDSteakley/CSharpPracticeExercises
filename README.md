@@ -1,6 +1,8 @@
 # CSharpPracticeExercises
 #### My solutions to C# exercises.
-
+  
+  
+  
 ### LeetCode (LC)
 -------------------------------
 
@@ -13,16 +15,14 @@
 - [X] Find N Unitque Integers Sum up to Zero - February 22, 2020
 - [X] Fibonacci Number - February 25, 2020
 - [ ] Find Common Characters
-- [ ] Two Sum II - Input array is sorted
+- [ ] Two Sum II
 
 
 ###### Strings:
 
 - [ ] Unique Morse Code Words
-- [ ] Robot Return to Origin
 - [X] Reverse String - February 10, 2020
 - [X] Reverse Words in a String III - February 11, 2020
-- [ ] Goat Latin
 - [ ] Roman to Integer
 - [X] Valid Palindrome - February 11, 2020
 - [X] Valid Palindrome II - February 18, 2020
@@ -44,11 +44,11 @@
 - [ ] Happy Number
 - [ ] Power of Two
 - [ ] X of a Kind in a Deck of Cards
-
-
-
-
-
+  
+  
+  
+  
+  
 ### HackerRank (HR)
 -------------------------------
 
@@ -161,11 +161,11 @@
 - [ ] Time Complexity: Primality (Medium)
 - [ ] Friend Circle Queries (Medium)
 - [ ] Maximum Xor (Medium)
-
-
-
-
-
+  
+  
+  
+  
+  
 ### Cracking the Coding Interview (CCI)
 -------------------------------
 
