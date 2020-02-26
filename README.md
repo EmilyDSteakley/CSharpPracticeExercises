@@ -11,7 +11,7 @@
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
 - [X] Find N Unitque Integers Sum up to Zero - February 22, 2020
-- [ ] Fibonacci Number
+- [X] Fibonacci Number - February 25, 2020
 - [ ] Find Common Characters
 - [ ] Two Sum II - Input array is sorted
 
