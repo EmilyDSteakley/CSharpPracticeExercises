@@ -39,18 +39,46 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-        public int Fib(int N)
+        public int Fib1(int N)
         {
+            // Option 1:
 
+            int[] fibonacciArr = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040 };
 
-            return 5;
+            return fibonacciArr[N];
         }
-        // XXX ms <-- Beats XX.XX%
-        // Solved February XX, 2020
+        //36 ms < --Beats 95.71 %
+        //Solved February 25, 2020;
 
 
 
-        // ---------------------------------------- XXX ms Solution on LeetCode ----------------------------------------
+        public int Fib2(int N)
+        {
+            // Option 2:
+
+            if (N <= 1)
+                return N;
+
+            return Fib2(N - 1) + Fib2(N - 2);
+        }
+        // 56 ms <-- Beats 38.80%
+        // Solved February 25, 2020
+
+
+
+        // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+        public int Fib24(int N)
+        {
+            int before_1 = 0, before_2 = 1, total = 0;
+            if (N == 1 || N == 2) return 1;
+            for (int i = 1; i <= N; i++)
+            {
+                total = before_1 + before_2;
+                before_2 = before_1;
+                before_1 = total;
+            }
+            return total;
+        }
 
     } // LC_A_FibonacciNumber
 
