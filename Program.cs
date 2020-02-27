@@ -10,20 +10,20 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            // Warm-up Challenges - Counting Valleys
+            Console.WriteLine("Warm-up Challenges - Counting Valleys");
+            var valleyCounter = new HR_W_CountingValleys();
+            Console.WriteLine($"Example 1: {valleyCounter.countingValleys(8, "DDUUUUDD")}");
+            Console.WriteLine($"Example 2: {valleyCounter.countingValleys(8, "UDDDUDUU")}");
+            // Solved February 27, 2020
 
 
-
-
-            //var counter = new HR_W_CountingValleys();
-            //Console.WriteLine(counter.countingValleys(n1, s1));
-            //Console.WriteLine(counter.countingValleys(n2, s2));
-
-
-            // Warm-up Challenges - Repeated String
-            Console.WriteLine("Warm-up Challenges - Repeated String");
-            var aCounter = new HR_W_RepeatedString();
-            Console.WriteLine($"Example 1: {aCounter.RepeatedString("aba", 10)}");
-            Console.WriteLine($"Example 2: {aCounter.RepeatedString("a", 1000000000000)}\n\n");
+            //// Warm-up Challenges - Repeated String
+            //Console.WriteLine("Warm-up Challenges - Repeated String");
+            //var aCounter = new HR_W_RepeatedString();
+            //Console.WriteLine($"Example 1: {aCounter.RepeatedString("aba", 10)}");
+            //Console.WriteLine($"Example 2: {aCounter.RepeatedString("a", 1000000000000)}\n\n");
+            //// Solved February 26, 2020
 
 
             //// 509. Fibonacci Number
@@ -33,6 +33,7 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 2: {fibonacci.Fib1(3)}");
             //Console.WriteLine($"Example 3: {fibonacci.Fib1(4)}");
             //Console.WriteLine($"Example 4: {fibonacci.Fib1(5)}\n\n");
+            //// Solved February 25, 2020
 
 
             //// 1204. Find N Unique Integers Sum up to Zero
