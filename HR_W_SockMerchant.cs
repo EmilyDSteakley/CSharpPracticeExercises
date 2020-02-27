@@ -47,7 +47,7 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-        public int sockMerchant(int n, int[] ar)
+        public int SockMerchant(int n, int[] ar)
         {
             var colorPairs = new Dictionary<int, int>();
             int pairs = 0;
