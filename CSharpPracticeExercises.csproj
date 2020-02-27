@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HR_W_CountingValleys.cs" />
+    <Compile Include="HR_W_RepeatedString.cs" />
     <Compile Include="HR_W_SockMerchant.cs" />
     <Compile Include="LC_A_FibonacciNumber.cs" />
     <Compile Include="LC_A_FindNUniqueIntegersSumUpToZero.cs" />
