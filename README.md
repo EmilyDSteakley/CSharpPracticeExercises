@@ -55,9 +55,9 @@
 ###### Warm-up Challenges:
 
 - [X] Sock Merchant (Easy) - February 20, 2020
-- [ ] Counting Valleys (Easy)
+- [X] Counting Valleys (Easy) - February 27, 2020
 - [ ] Jumping on the Clouds (Easy)
-- [ ] Repeated String (Easy)
+- [X] Repeated String (Easy) - February 27, 2020
 
 
 ###### Arrays:
