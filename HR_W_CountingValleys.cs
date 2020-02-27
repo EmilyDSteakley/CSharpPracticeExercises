@@ -56,15 +56,29 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public int countingValleys(int n, string s)
         {
+            int loc = 0;
+            int possible = 0;
+            int confirmed = 0;
+            int iter = 0;
 
+            foreach (char i in s)
+            {
+                iter++;
 
+                if(i == 'D')
+                    loc--;
+                if(i == 'U')
+                    loc++;
 
+                if(loc == -1)
+                    possible = iter;
+                if (loc == 0 && possible + 1 == iter)
+                    confirmed++;
+            }
 
-
-
-            throw new NotImplementedException();
+            return confirmed;
         }
-        // Solved February 2X, 2020
+        // Solved February 27, 2020
 
     } // HR_W_CountingValleys class
 
