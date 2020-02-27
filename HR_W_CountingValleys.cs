@@ -19,21 +19,21 @@ namespace CSharpPracticeExercises
 
         // For example, if Gary's path is s = [DDUUUUDD], he first enters a valley 2 units deep. 
         // Then he climbs out an up onto a mountain 2 units high. Finally, he returns to sea level and ends his hike.
-        
+
         // Function Description
         // Complete the countingValleys function in the editor below. It must return an integer that denotes the number of valleys Gary traversed.
-        
+
         // countingValleys has the following parameter(s):
         //  - n: the number of steps Gary takes
         //  - s: a string describing his path
-        
+
         // Input Format
         // The first line contains an integer n, the number of steps in Gary's hike.
         // The second line contains a single string s, of n characters that describe his path.
 
         // Constraints
         // - 2 <= n <= 10^6
-        // - s[i] an element of {UD}
+        // - s[i] ∈ {UD} 
 
         // Output Format
         // Print a single integer that denotes the number of valleys Gary walked through during his hike.
@@ -62,9 +62,9 @@ namespace CSharpPracticeExercises
 
 
 
-            return 5;
+            throw new NotImplementedException();
         }
-        // Solved February 20, 2020
+        // Solved February 2X, 2020
 
     } // HR_W_CountingValleys class
 
