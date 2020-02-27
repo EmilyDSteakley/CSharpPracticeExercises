@@ -61,5 +61,32 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-    }
-}
+        public long RepeatedString(string s, long n)
+        {
+            long subTimes;
+            long aInSub;
+            int counter = 0;
+
+            foreach (char letter in s)
+            {
+                if (letter == 'a')
+                    counter++;
+            }
+
+            subTimes = n / s.Length;
+            aInSub = subTimes * counter;
+            subTimes *= s.Length;
+
+            for (int i = 0; i < n - subTimes; i++)
+            {
+                if (s[i] == 'a')
+                    aInSub++;
+            }
+
+            return aInSub;
+        }
+        // Solved February 27, 2020
+
+    } // HR_W_RepeatedString class
+
+}// CSharpPracticeExercises namespace
