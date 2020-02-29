@@ -10,12 +10,21 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Warm-up Challenges - Counting Valleys
-            Console.WriteLine("Warm-up Challenges - Counting Valleys");
-            var valleyCounter = new HR_W_CountingValleys();
-            Console.WriteLine($"Example 1: {valleyCounter.countingValleys(8, "DDUUUUDD")}");
-            Console.WriteLine($"Example 2: {valleyCounter.countingValleys(8, "UDDDUDUU")}");
-            // Solved February 27, 2020
+            // 961. N-Repeated Element in Size 2N Array
+            Console.WriteLine("961. N-Repeated Element in Size 2N Array");
+            var nTimes = new LC_H_NRepeatedElementInSize2NArray();
+            Console.WriteLine($"Example 1: {nTimes.RepeatedNTimes(new[] { 1, 2, 3, 3 })}");
+            Console.WriteLine($"Example 2: {nTimes.RepeatedNTimes(new[] { 2, 1, 2, 5, 3, 2 })}");
+            Console.WriteLine($"Example 3: {nTimes.RepeatedNTimes(new[] { 5, 1, 5, 2, 5, 3, 4 })}\n\n");
+            // Solved February 28, 2020
+
+
+            //// Warm-up Challenges - Counting Valleys
+            //Console.WriteLine("Warm-up Challenges - Counting Valleys");
+            //var valleyCounter = new HR_W_CountingValleys();
+            //Console.WriteLine($"Example 1: {valleyCounter.countingValleys(8, "DDUUUUDD")}");
+            //Console.WriteLine($"Example 2: {valleyCounter.countingValleys(8, "UDDDUDUU")}");
+            //// Solved February 27, 2020
 
 
             //// Warm-up Challenges - Repeated String
