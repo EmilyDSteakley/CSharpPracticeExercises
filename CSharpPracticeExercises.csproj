@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HR_A_LeftRotation.cs" />
     <Compile Include="HR_W_CountingValleys.cs" />
     <Compile Include="HR_W_RepeatedString.cs" />
     <Compile Include="HR_W_SockMerchant.cs" />
