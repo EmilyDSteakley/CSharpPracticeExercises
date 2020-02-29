@@ -32,8 +32,8 @@ namespace CSharpPracticeExercises
         // The second line contains a single string s, of n characters that describe his path.
 
         // Constraints
-        // - 2 <= n <= 10^6
-        // - s[i] ∈ {UD} 
+        //  - 2 <= n <= 10^6
+        //  - s[i] ∈ {UD} 
 
         // Output Format
         // Print a single integer that denotes the number of valleys Gary walked through during his hike.
