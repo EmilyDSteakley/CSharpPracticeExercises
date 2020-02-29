@@ -10,13 +10,20 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // 961. N-Repeated Element in Size 2N Array
-            Console.WriteLine("961. N-Repeated Element in Size 2N Array");
-            var nTimes = new LC_H_NRepeatedElementInSize2NArray();
-            Console.WriteLine($"Example 1: {nTimes.RepeatedNTimes(new[] { 1, 2, 3, 3 })}");
-            Console.WriteLine($"Example 2: {nTimes.RepeatedNTimes(new[] { 2, 1, 2, 5, 3, 2 })}");
-            Console.WriteLine($"Example 3: {nTimes.RepeatedNTimes(new[] { 5, 1, 5, 2, 5, 3, 4 })}\n\n");
-            // Solved February 28, 2020
+            // Arrays - Left Rotation
+            Console.WriteLine("Arrays - Left Rotation");
+            var leftRot = new HR_A_LeftRotation();
+            Console.WriteLine($"Example 1: [{string.Join(", ", leftRot.RotLeft(new[] { 1, 2, 3, 4, 5 }, 4))}]");
+            Console.WriteLine($"Example 2: [{string.Join(", ", leftRot.RotLeft(new[] { 7, 9, 6, 2 }, 2))}]");
+            // Solved February 29, 2020
+
+            //// 961. N-Repeated Element in Size 2N Array
+            //Console.WriteLine("961. N-Repeated Element in Size 2N Array");
+            //var nTimes = new LC_H_NRepeatedElementInSize2NArray();
+            //Console.WriteLine($"Example 1: {nTimes.RepeatedNTimes(new[] { 1, 2, 3, 3 })}");
+            //Console.WriteLine($"Example 2: {nTimes.RepeatedNTimes(new[] { 2, 1, 2, 5, 3, 2 })}");
+            //Console.WriteLine($"Example 3: {nTimes.RepeatedNTimes(new[] { 5, 1, 5, 2, 5, 3, 4 })}\n\n");
+            //// Solved February 28, 2020
 
 
             //// Warm-up Challenges - Counting Valleys
