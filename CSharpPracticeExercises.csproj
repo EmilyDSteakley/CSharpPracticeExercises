@@ -54,6 +54,7 @@
     <Compile Include="LC_M_Maximum69Number.cs" />
     <Compile Include="LC_M_PalindromeNumber.cs" />
     <Compile Include="LC_A_PascalsTriangle.cs" />
+    <Compile Include="LC_H_NRepeatedElementInSize2NArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LC_S_ReverseString.cs" />
