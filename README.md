@@ -67,7 +67,7 @@
 
 ###### Arrays:
 - [ ] 2D Array - DS (Easy)
-- [ ] Arrays: Left Rotation (Easy)
+- [X] Arrays: Left Rotation (Easy)
 - [ ] New Year Chaos (Medium)
 - [ ] Minimum Swaps 2 (Medium)
 - [ ] Array Manipulation (Hard)
