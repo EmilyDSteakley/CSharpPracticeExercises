@@ -47,10 +47,8 @@ namespace CSharpPracticeExercises
 
             for (int i = 0; i < nums.Length; i++)
             {
-                for (int j = i + 1, k = 0; k < nums.Length - 1; j++, k++)
+                for (int j = 0; j < nums.Length - 1; j++)
                 {
-                    if (j >= nums.Length)
-                        j = 0;
                     if (nums[j] < nums[i])
                         counter++;
                 }
@@ -59,7 +57,7 @@ namespace CSharpPracticeExercises
             }
             return output;
         }
-        // 268 ms
+        // 260 ms
         // Solved February 29, 2020
 
     } // LC_C_HowManyNumbersAreSmallerThanTheCurrentNumber class
