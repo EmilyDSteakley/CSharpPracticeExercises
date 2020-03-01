@@ -13,3 +13,5 @@ Properties
 # Files
 App.config
 .gitattributes
+CSharpPracticeExercises.csproj
+CSharpPracticeExercises.sln
