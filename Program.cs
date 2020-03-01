@@ -10,12 +10,22 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Arrays - Left Rotation
-            Console.WriteLine("Arrays - Left Rotation");
-            var leftRot = new HR_A_LeftRotation();
-            Console.WriteLine($"Example 1: [{string.Join(", ", leftRot.RotLeft(new[] { 1, 2, 3, 4, 5 }, 4))}]");
-            Console.WriteLine($"Example 2: [{string.Join(", ", leftRot.RotLeft(new[] { 7, 9, 6, 2 }, 2))}]");
+
+            // 1365. How Many Numbers Are Smaller Than the Current Number
+            Console.WriteLine("1365. How Many Numbers Are Smaller Than the Current Number");
+            var smallerNums = new LC_A_HowManyNumbersAreSmallerThanTheCurrentNumber();
+            Console.WriteLine($"Example 1: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 8, 1, 2, 2, 3 }))}]");
+            Console.WriteLine($"Example 2: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 6, 5, 4, 8 }))}]");
+            Console.WriteLine($"Example 3: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 7, 7, 7, 7 }))}]");
             // Solved February 29, 2020
+
+
+            //// Arrays - Left Rotation
+            //Console.WriteLine("Arrays - Left Rotation");
+            //var leftRot = new HR_A_LeftRotation();
+            //Console.WriteLine($"Example 1: [{string.Join(", ", leftRot.RotLeft(new[] { 1, 2, 3, 4, 5 }, 4))}]");
+            //Console.WriteLine($"Example 2: [{string.Join(", ", leftRot.RotLeft(new[] { 7, 9, 6, 2 }, 2))}]");
+            //// Solved February 29, 2020
 
             //// 961. N-Repeated Element in Size 2N Array
             //Console.WriteLine("961. N-Repeated Element in Size 2N Array");
