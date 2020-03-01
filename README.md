@@ -16,6 +16,7 @@
 - [X] Fibonacci Number - February 25, 2020
 - [ ] Find Common Characters
 - [ ] Two Sum II
+- [X] How Many Numbers Are Smaller Than the Current Number - February 29, 2020
 
 
 ###### Strings:
