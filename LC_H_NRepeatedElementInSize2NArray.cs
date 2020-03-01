@@ -54,7 +54,6 @@ namespace CSharpPracticeExercises
 
             return -1;
         }
-
         // 120 ms <-- Beats 93.60%
         // Solved February 28, 2020
 
