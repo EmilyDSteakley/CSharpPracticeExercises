@@ -10,14 +10,22 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            // 231. Power of Two
+            Console.WriteLine("// 231. Power of Two");
+            var twoPower = new LC_M_PowerOfTwo();
+            Console.WriteLine($"Example 1: {twoPower.IsPowerOfTwo(1)}");
+            Console.WriteLine($"Example 2: {twoPower.IsPowerOfTwo(16)}");
+            Console.WriteLine($"Example 3: {twoPower.IsPowerOfTwo(218)}");
+            // Solved March 2, 2020
 
-            // 1365. How Many Numbers Are Smaller Than the Current Number
-            Console.WriteLine("1365. How Many Numbers Are Smaller Than the Current Number");
-            var smallerNums = new LC_A_HowManyNumbersAreSmallerThanTheCurrentNumber();
-            Console.WriteLine($"Example 1: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 8, 1, 2, 2, 3 }))}]");
-            Console.WriteLine($"Example 2: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 6, 5, 4, 8 }))}]");
-            Console.WriteLine($"Example 3: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 7, 7, 7, 7 }))}]");
-            // Solved February 29, 2020
+
+            //// 1365. How Many Numbers Are Smaller Than the Current Number
+            //Console.WriteLine("1365. How Many Numbers Are Smaller Than the Current Number");
+            //var smallerNums = new LC_A_HowManyNumbersAreSmallerThanTheCurrentNumber();
+            //Console.WriteLine($"Example 1: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 8, 1, 2, 2, 3 }))}]");
+            //Console.WriteLine($"Example 2: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 6, 5, 4, 8 }))}]");
+            //Console.WriteLine($"Example 3: [{string.Join(", ", smallerNums.SmallerNumbersThanCurrent(new[] { 7, 7, 7, 7 }))}]");
+            //// Solved February 29, 2020
 
 
             //// Arrays - Left Rotation
