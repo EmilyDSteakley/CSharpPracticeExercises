@@ -57,8 +57,25 @@ namespace CSharpPracticeExercises
             }
             return output;
         }
-        // 260 ms
+        // 260 ms <-- Beats 41.38%
         // Solved February 29, 2020
+
+
+
+        // ---------------------------------------- 228 ms Solution on LeetCode ----------------------------------------
+        public int[] SmallerNumbersThanCurrent228(int[] nums)
+        {
+            int max = nums.Max(n => n);
+            var record = new int[max + 1];
+            foreach (var num in nums)
+                record[num]++;
+            int[] smallerNums = new int[record.Length];
+            for (int i = 1; i < smallerNums.Length; i++)
+                smallerNums[i] = smallerNums[i - 1] + record[i - 1];
+            for (int i = 0; i < nums.Length; i++)
+                nums[i] = smallerNums[nums[i]];
+            return nums;
+        }
 
     } // LC_C_HowManyNumbersAreSmallerThanTheCurrentNumber class
 
