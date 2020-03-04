@@ -56,85 +56,119 @@ namespace CSharpPracticeExercises
         // Constraints:
         //  - 1 <= votes.length <= 1000
         //  - 1 <= votes[i].length <= 26
-        //  - votes[i].length == votes[j].length for 0 <= i, j<votes.length.
+        //  - votes[i].length == votes[j].length for 0 <= i, j < votes.length.
         //  - votes[i][j] is an English upper-case letter.
         //  - All characters of votes[i] are unique.
-        //  - All the characters that occur in votes[0] also occur in votes[j] where 1 <= j<votes.length.
+        //  - All the characters that occur in votes[0] also occur in votes[j] where 1 <= j < votes.length.
 
 
 
         // ---------------------------------------- My Solution ----------------------------------------
         public string RankTeams(string[] votes)
         {
+            // If there is only 1 vote, return the vote
             if (votes.Length == 1)
-                return votes.ToString();
+                return votes[0].ToString();
 
+            // Check constraints
             if (votes.Length == 0 || votes.Length > 1000 || votes[0].Length == 0 || votes[0].Length > 26)
                 throw new ArgumentOutOfRangeException();
 
-            var voteTally = new int[votes[0].Length, votes[0].Length];
+            // Number of Teams and Number of Places
+            var numOfTeams = votes[0].Length;
 
+            // Create a 2D array with size number of teams by number of teams
+            var voteTally = new int[numOfTeams, numOfTeams];
+
+            // Set the first vote as the template and sort as sortedTeams
             var template = votes[0];
+            var sortedTeams = template.ToCharArray();
+            Array.Sort(sortedTeams);
 
-            for (int i = 0; i < template.Length; i++)
+            //// Display sortedTeams
+            //Console.WriteLine($"[{string.Join(", ", sortedTeams)}]");
+
+
+
+            // Tally the number of times a team gets a vote for a rank and fill the voteTally array
+            for (int i = 0; i < sortedTeams.Length; i++)
             {
                 for (int j = 0; j < votes.Length; j++)
                 {
-                    voteTally[i, Array.IndexOf(votes[j].ToCharArray(), template[i])]++;
+                    voteTally[i, Array.IndexOf(votes[j].ToCharArray(), sortedTeams[i])]++;
                 }
             }
 
-            Print2DArray(voteTally);
-
-            //MaxIndex(voteTally)
-
+            // Display voteTally
+            PrintArray(voteTally);
 
 
 
-            return "Incomplete";
-        }
-        // XX ms <-- Beats XX.XX%
-        // Solved March XX, 2020
-
-
-        public static int[] MaxIndex(int[] arr, int l)
-        {
-            var ranking = new int[arr.GetLength(0)];
-            
-
-            for (int i = 0; i < arr.GetLength(1); i++)
+            // Make each row a number string
+            var numArr = new string[numOfTeams];
+            var numStr = new StringBuilder();
+            for (int i = 0; i < numOfTeams; i++)
             {
-                for (int j = 0; j < arr.GetLength(0); j++)
+                for (int j = 0; j < numOfTeams; j++)
                 {
-
+                    numStr.Append(voteTally[i,j]);
                 }
+                numArr[i] = numStr.ToString();
+                numStr.Clear();
             }
 
-            //int max = 0;
-            //for (int i = 1; i < arr.Length; i++)
-            //{
-            //    if (arr[i] > max)
-            //        max = i;
-            //}
-            //return max;
+            // Display numArr
+            Console.WriteLine($"[{string.Join(", ", numArr)}]");
+
+
+
+            // Create a dictionary with the teams as keys and numbers as values
+            var templateRank = new Dictionary<char, string>();
+            for (int i = 0; i < numOfTeams; i++)
+            {
+                templateRank.Add(sortedTeams[i], numArr[i]);
+            }
+
+            // Display templateRank
+            foreach (KeyValuePair<char, string> team in templateRank)
+            {
+                Console.WriteLine($"Key = {team.Key}, Value = {team.Value}");
+            }
+
+            // Sort templateRank by value in descending order and create a result string
+            var result = new StringBuilder();
+            foreach (KeyValuePair<char, string> team in templateRank.OrderByDescending(key => key.Value))
+            {
+                //Console.WriteLine($"Key = {team.Key}, Value = {team.Value}");
+                result.Append(team.Key);
+            }
+
+            return result.ToString();
         }
 
 
-
-
-
-        // Raz Megrelidze's method. Found on stack overflow.
-        public static void Print2DArray<T>(T[,] matrix)
+        public static void PrintArray<T>(T[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.Write(matrix[i, j] + "\t");
+                    Console.Write(matrix[i, j] + " ");
                 }
                 Console.WriteLine();
             }
         }
+
+
+        // March 3, 2020
+        // My solution of turning the tally row into a single number does not work when the tally excedes 10
+        // No idea what to do now...
+
+
+
+        // XX ms <-- Beats XX.XX%
+        // Solved March XX, 2020
+
 
 
         // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
