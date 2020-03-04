@@ -77,9 +77,6 @@ namespace CSharpPracticeExercises
             // Number of Teams and Number of Places
             var numOfTeams = votes[0].Length;
 
-            // Create a 2D array with size number of teams by number of teams
-            var voteTally = new int[numOfTeams, numOfTeams];
-
             // Set the first vote as the template and sort as sortedTeams
             var template = votes[0];
             var sortedTeams = template.ToCharArray();
@@ -90,79 +87,85 @@ namespace CSharpPracticeExercises
 
 
 
+            // Create a jagged array with size number of teams by number of teams
+            var voteTally = new int[numOfTeams][];
+            for (int i = 0; i < numOfTeams; i++)
+            {
+                voteTally[i] = new int[numOfTeams];
+            }
+
             // Tally the number of times a team gets a vote for a rank and fill the voteTally array
             for (int i = 0; i < sortedTeams.Length; i++)
             {
                 for (int j = 0; j < votes.Length; j++)
                 {
-                    voteTally[i, Array.IndexOf(votes[j].ToCharArray(), sortedTeams[i])]++;
+                    voteTally[i][Array.IndexOf(votes[j].ToCharArray(), sortedTeams[i])]++;
                 }
             }
 
             // Display voteTally
             PrintArray(voteTally);
+            Console.WriteLine();
 
 
 
-            // Make each row a number string
-            var numArr = new string[numOfTeams];
-            var numStr = new StringBuilder();
+            // ----------------------------------------------- Trying to sort a jagged arrray ----------------------------------------------- 
+
+            //Array.Sort(voteTally, new Comparison<int[]>((x, y) => { return x[0] < y[0] ? -1 : (x[0] > y[0] ? 1 : 0); }));
+
+            //Array.Sort(voteTally, new Comparison<int[]>((x, y) => { });
+
+
+
+            //{ return x < y ? -1 : (x > y ? 1 : 0); }));
+
+            //PrintArray(voteTally.OrderBy(x => x.First()).ToArray());
+
+
+            // PrintArray(voteTally);
+
+
+            // Create a dictionary with the teams as keys and int array as values
+            var templateRank = new Dictionary<char, int[]>();
             for (int i = 0; i < numOfTeams; i++)
             {
-                for (int j = 0; j < numOfTeams; j++)
-                {
-                    numStr.Append(voteTally[i,j]);
-                }
-                numArr[i] = numStr.ToString();
-                numStr.Clear();
-            }
-
-            // Display numArr
-            Console.WriteLine($"[{string.Join(", ", numArr)}]");
-
-
-
-            // Create a dictionary with the teams as keys and numbers as values
-            var templateRank = new Dictionary<char, string>();
-            for (int i = 0; i < numOfTeams; i++)
-            {
-                templateRank.Add(sortedTeams[i], numArr[i]);
+                templateRank.Add(sortedTeams[i], voteTally[i]);
             }
 
             // Display templateRank
-            foreach (KeyValuePair<char, string> team in templateRank)
+            foreach (KeyValuePair<char, int[]> team in templateRank)
             {
-                Console.WriteLine($"Key = {team.Key}, Value = {team.Value}");
+                Console.WriteLine($"Key = {team.Key}, Value = [{string.Join(", ", team.Value)}]");
             }
+
+
 
             // Sort templateRank by value in descending order and create a result string
             var result = new StringBuilder();
-            foreach (KeyValuePair<char, string> team in templateRank.OrderByDescending(key => key.Value))
+            foreach (KeyValuePair<char, int[]> team in templateRank.OrderByDescending(key => key.Value.First()))
             {
                 //Console.WriteLine($"Key = {team.Key}, Value = {team.Value}");
                 result.Append(team.Key);
             }
 
             return result.ToString();
+
+            //return "incomplete";
         }
 
 
-        public static void PrintArray<T>(T[,] matrix)
+        public static void PrintArray<T>(T[][] jaggedArr)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < jaggedArr.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < jaggedArr.GetLength(0); j++)
                 {
-                    Console.Write(matrix[i, j] + " ");
+                    Console.Write(jaggedArr[i][j] + " ");
                 }
                 Console.WriteLine();
             }
         }
 
-
-        // March 3, 2020
-        // My solution of turning the tally row into a single number does not work when the tally excedes 10
-        // No idea what to do now...
 
 
 
