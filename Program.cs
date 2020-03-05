@@ -10,15 +10,23 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // 1366. Rank Teams by Votes
-            Console.WriteLine("1366. Rank Teams by Votes");
-            var teamRanker = new LC_A_RankTeamsByVotes();
-            Console.WriteLine($"Example 1: {teamRanker.RankTeams(new[] { "ABC", "ACB", "ABC", "ACB", "ACB" })}");
-            Console.WriteLine($"Example 2: {teamRanker.RankTeams(new[] { "WXYZ", "XYZW" })}");
-            Console.WriteLine($"Example 3: {teamRanker.RankTeams(new[] { "ZMNAGUEDSJYLBOPHRQICWFXTVK" })}");
-            Console.WriteLine($"Example 4: {teamRanker.RankTeams(new[] { "BCA", "CAB", "CBA", "ABC", "ACB", "BAC" })}");
-            Console.WriteLine($"Example 5: {teamRanker.RankTeams(new[] { "M", "M", "M", "M" })}");
-            // Solved March 5, 2020
+            // 1160. Find Words That Can Be Formed by Characters
+            Console.WriteLine("1160. Find Words That Can Be Formed by Characters");
+            var countCharacters = new LC_A_FindWordsThatCanBeFormedByCharacters();
+            //Console.WriteLine($"Example 1: {countCharacters.CountCharacters(new[] { "cat", "bt", "hat", "tree" }, "atach")}");
+            Console.WriteLine($"Example 2: {countCharacters.CountCharacters(new[] { "hello", "world", "leetcode" }, "welldonehoneyr")}");
+            // Solved March XX, 2020
+
+
+            //// 1366. Rank Teams by Votes
+            //Console.WriteLine("1366. Rank Teams by Votes");
+            //var teamRanker = new LC_A_RankTeamsByVotes();
+            //Console.WriteLine($"Example 1: {teamRanker.RankTeams(new[] { "ABC", "ACB", "ABC", "ACB", "ACB" })}");
+            //Console.WriteLine($"Example 2: {teamRanker.RankTeams(new[] { "WXYZ", "XYZW" })}");
+            //Console.WriteLine($"Example 3: {teamRanker.RankTeams(new[] { "ZMNAGUEDSJYLBOPHRQICWFXTVK" })}");
+            //Console.WriteLine($"Example 4: {teamRanker.RankTeams(new[] { "BCA", "CAB", "CBA", "ABC", "ACB", "BAC" })}");
+            //Console.WriteLine($"Example 5: {teamRanker.RankTeams(new[] { "M", "M", "M", "M" })}");
+            //// Solved March 5, 2020
 
 
             //// 231. Power of Two
