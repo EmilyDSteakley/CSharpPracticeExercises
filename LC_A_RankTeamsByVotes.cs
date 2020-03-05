@@ -15,7 +15,8 @@ namespace CSharpPracticeExercises
         // In a special ranking system, each voter gives a rank from highest to lowest to all teams participated in the competition.
 
         // The ordering of teams is decided by who received the most position-one votes. 
-        // If two or more teams tie in the first position, we consider the second position to resolve the conflict, if they tie again, we continue this process until the ties are resolved. 
+        // If two or more teams tie in the first position, we consider the second position to resolve the conflict, 
+        // if they tie again, we continue this process until the ties are resolved. 
         // If two or more teams are still tied after considering all positions, we rank them alphabetically based on their team letter.
 
         // Given an array of strings votes which is the votes of all voters in the ranking systems.Sort all teams according to the ranking system described above.
@@ -103,26 +104,8 @@ namespace CSharpPracticeExercises
                 }
             }
 
-            // Display voteTally
-            PrintArray(voteTally);
-            Console.WriteLine();
-
-
-
-            // ----------------------------------------------- Trying to sort a jagged arrray ----------------------------------------------- 
-
-            //Array.Sort(voteTally, new Comparison<int[]>((x, y) => { return x[0] < y[0] ? -1 : (x[0] > y[0] ? 1 : 0); }));
-
-            //Array.Sort(voteTally, new Comparison<int[]>((x, y) => { });
-
-
-
-            //{ return x < y ? -1 : (x > y ? 1 : 0); }));
-
-            //PrintArray(voteTally.OrderBy(x => x.First()).ToArray());
-
-
-            // PrintArray(voteTally);
+            //// Display voteTally
+            //PrintArray(voteTally);
 
 
             // Create a dictionary with the teams as keys and int array as values
@@ -132,27 +115,42 @@ namespace CSharpPracticeExercises
                 templateRank.Add(sortedTeams[i], voteTally[i]);
             }
 
-            // Display templateRank
-            foreach (KeyValuePair<char, int[]> team in templateRank)
+            //// Display templateRank
+            //foreach (KeyValuePair<char, int[]> team in templateRank)
+            //{
+            //    Console.WriteLine($"Key = {team.Key}, Value = [{string.Join(", ", team.Value)}]");
+            //}
+
+
+
+            // Sort templateRank by value in descending order using a radix sort and create a result string
+            var sortedTemplateRank = new Dictionary<char, int[]>();
+            var result = new StringBuilder();
+            for (int i = numOfTeams - 1; i >= 0; i--)
             {
-                Console.WriteLine($"Key = {team.Key}, Value = [{string.Join(", ", team.Value)}]");
+                foreach (KeyValuePair<char, int[]> team in templateRank.OrderByDescending(key => key.Value.ElementAt(i)))
+                {
+                    sortedTemplateRank.Add(team.Key, team.Value);
+                }
+                templateRank.Clear();
+
+                foreach (KeyValuePair<char, int[]> team in sortedTemplateRank)
+                {
+                    templateRank.Add(team.Key, team.Value);
+                }
+                sortedTemplateRank.Clear();
             }
 
-
-
-            // Sort templateRank by value in descending order and create a result string
-            var result = new StringBuilder();
-            foreach (KeyValuePair<char, int[]> team in templateRank.OrderByDescending(key => key.Value.First()))
+            foreach (KeyValuePair<char, int[]> team in templateRank)
             {
-                //Console.WriteLine($"Key = {team.Key}, Value = {team.Value}");
+                //Console.WriteLine($"Key = {team.Key}, Value = [{string.Join(", ", team.Value)}]");
                 result.Append(team.Key);
             }
 
             return result.ToString();
-
-            //return "incomplete";
         }
-
+        // 128 ms <-- Beats 21.70%
+        // Solved March 5, 2020
 
         public static void PrintArray<T>(T[][] jaggedArr)
         {
@@ -168,14 +166,129 @@ namespace CSharpPracticeExercises
 
 
 
+        // ---------------------------------------- 120 ms Solution on LeetCode ----------------------------------------
+        public const int RANKS = 5;
+        public class Team
+        {
+            public char letter;
+            public long[] ranks;
+            public Team(char letter)
+            {
+                this.letter = letter;
+                ranks = new long[RANKS];
+            }
+        }
 
-        // XX ms <-- Beats XX.XX%
-        // Solved March XX, 2020
+        public const long SHIFT = 1;
+
+        public string RankTeams120(string[] votes)
+        {
+            // for each rank, count the # of teams
+            // Then sort the teams by this property
+            // Create a custom comparator
+            // Use string builder to return
+            if (votes == null || votes.Length == 0)
+            {
+                return "";
+            }
+
+            // Get the # of ranks
+            int rankCount = votes[0].Length;
+            var teams = new Dictionary<char, Team>();
+            foreach (char letter in votes[0])
+            {
+                teams.Add(letter, new Team(letter));
+            }
+
+            // Count the number of votes for each rank
+            foreach (var vote in votes)
+            {
+                for (int i = 0; i < rankCount; i++)
+                {
+                    var teamLetter = vote[i];
+                    int rankIndex = i / 6;
+                    teams[teamLetter].ranks[rankIndex] += (SHIFT << ((5 - (i % 6)) * 10));
+                }
+            }
+
+            // Team List Sorting
+            List<Team> teamList = new List<Team>(teams.Values);
+            teamList.Sort((x, y) => {
+                for (int i = 0; i < RANKS; i++)
+                {
+                    if (x.ranks[i] < y.ranks[i])
+                    {
+                        return 1;
+                    }
+                    else if (x.ranks[i] > y.ranks[i])
+                    {
+                        return -1;
+                    }
+                }
+                return x.letter < y.letter ? -1 : 1;
+            });
+
+            // Team C Str
+            char[] teamCStr = new char[rankCount];
+            for (int i = 0; i < rankCount; i++)
+            {
+                // StringBuilder sb = new StringBuilder();
+                // foreach(var r in teamList[i].ranks) {
+                //     sb.Append(", " + r);
+                // }
+                // Console.WriteLine(teamList[i].letter + ": " + sb.ToString());
+                teamCStr[i] = teamList[i].letter;
+            }
+            return new string(teamCStr);
+        }
 
 
 
-        // ---------------------------------------- 24 ms Solution on LeetCode ----------------------------------------
+        // ---------------------------------------- 96 ms Solution on LeetCode ----------------------------------------
+        public static int[,] _ranks;
 
+        class TeamComparer : IComparer<char>
+        {
+            public int Compare(char a, char b)
+            {
+                for (int r = 0; r < _ranks.GetLength(0); r++)
+                {
+                    if (_ranks[r, a - 'A'] != _ranks[r, b - 'A'])
+                    {
+                        return _ranks[r, b - 'A'] - _ranks[r, a - 'A'];
+                    }
+                }
+                return a - b;
+            }
+        }
+
+        public string RankTeams96(string[] votes)
+        {
+            if (votes == null || votes.Length == 0)
+            {
+                return string.Empty;
+            }
+
+            int numRanks = votes[0].Length;
+            if (votes.Length == 1 || numRanks <= 1)
+            {
+                return votes[0];
+            }
+
+            _ranks = new int[numRanks, 26];
+            foreach (string vote in votes)
+            {
+                for (int i = 0; i < vote.Length; i++)
+                {
+                    _ranks[i, vote[i] - 'A']++;
+                }
+            }
+
+            var res = votes[0].ToCharArray();
+            Array.Sort(res, new TeamComparer());
+
+            return new string(res);
+        }
 
     } // LC_A_RankTeamsByVotes class
 
