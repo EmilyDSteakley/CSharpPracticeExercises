@@ -13,9 +13,9 @@ namespace CSharpPracticeExercises
             // 1160. Find Words That Can Be Formed by Characters
             Console.WriteLine("1160. Find Words That Can Be Formed by Characters");
             var countCharacters = new LC_A_FindWordsThatCanBeFormedByCharacters();
-            //Console.WriteLine($"Example 1: {countCharacters.CountCharacters(new[] { "cat", "bt", "hat", "tree" }, "atach")}");
+            Console.WriteLine($"Example 1: {countCharacters.CountCharacters(new[] { "cat", "bt", "hat", "tree" }, "atach")}");
             Console.WriteLine($"Example 2: {countCharacters.CountCharacters(new[] { "hello", "world", "leetcode" }, "welldonehoneyr")}");
-            // Solved March XX, 2020
+            // Solved March 5, 2020
 
 
             //// 1366. Rank Teams by Votes
