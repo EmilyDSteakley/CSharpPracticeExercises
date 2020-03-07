@@ -9,6 +9,7 @@
 ###### Arrays (A):
 
 - [X] Two Sum - February 18, 2020
+- [X] Find Words That Can Be Formed by Characters - March 5, 2020
 - [ ] Pascal's Triangle
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
@@ -42,7 +43,7 @@
 - [ ] Distribute Candies to People
 - [ ] Largest Perimeter Triangle
 - [ ] Valid Perfect Square
-- [ ] Happy Number
+- [X] Happy Number - March 6, 2020
 - [X] Power of Two - March 2, 2020
 - [ ] X of a Kind in a Deck of Cards
 
