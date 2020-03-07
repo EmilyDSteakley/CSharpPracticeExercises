@@ -10,21 +10,12 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-
             // 202. Happy Number
             Console.WriteLine("202. Happy Number");
             var isHappy = new LC_M_HappyNumber();
             Console.WriteLine($"Example 1: {isHappy.IsHappy32(19)}");
-            Console.WriteLine($"Example 1S: {isHappy.countSlow}");
-            Console.WriteLine($"Example 1F: {isHappy.countFast}");
             Console.WriteLine($"Example 2: {isHappy.IsHappy32(23)}");
-            Console.WriteLine($"Example 2S: {isHappy.countSlow}");
-            Console.WriteLine($"Example 2F: {isHappy.countFast}");
-            //Console.WriteLine($"Example 1: {isHappy.IsHappy32(19)}");
-            Console.WriteLine($"Example 3: {isHappy.IsHappy32(37)}");
-            Console.WriteLine($"Example 3S: {isHappy.countSlow}");
-            Console.WriteLine($"Example 3F: {isHappy.countFast}");
-            //Console.WriteLine($"Example 1: {isHappy.IsHappy32(19)}");
+            Console.WriteLine($"Example 1: {isHappy.IsHappy32(47)}");
             // Solved March 5, 2020
 
 
