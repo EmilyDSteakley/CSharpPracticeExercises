@@ -10,7 +10,7 @@
 
 - [X] Two Sum - February 18, 2020
 - [X] Find Words That Can Be Formed by Characters - March 5, 2020
-- [ ] Pascal's Triangle
+- [X] Pascal's Triangle - March 9, 2020
 - [ ] Pascal's Triangle II
 - [ ] Minimum Time Visiting All Points
 - [X] Find N Unitque Integers Sum up to Zero - February 22, 2020
