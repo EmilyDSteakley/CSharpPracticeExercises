@@ -10,13 +10,20 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // 202. Happy Number
-            Console.WriteLine("202. Happy Number");
-            var isHappy = new LC_M_HappyNumber();
-            Console.WriteLine($"Example 1: {isHappy.IsHappy32(19)}");
-            Console.WriteLine($"Example 2: {isHappy.IsHappy32(23)}");
-            Console.WriteLine($"Example 1: {isHappy.IsHappy32(47)}");
-            // Solved March 5, 2020
+            // 118. Pascal's Triangle
+            Console.WriteLine("118. Pascal's Triangle");
+            var generator = new LC_A_PascalsTriangle();
+            Console.WriteLine("Example 1:");
+            PrintJaggedArray(generator.Generate2(5));
+
+
+            //// 202. Happy Number
+            //Console.WriteLine("202. Happy Number");
+            //var isHappy = new LC_M_HappyNumber();
+            //Console.WriteLine($"Example 1: {isHappy.IsHappy32(19)}");
+            //Console.WriteLine($"Example 2: {isHappy.IsHappy32(23)}");
+            //Console.WriteLine($"Example 1: {isHappy.IsHappy32(47)}");
+            //// Solved March 5, 2020
 
 
             //// 1160. Find Words That Can Be Formed by Characters
@@ -186,8 +193,19 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(53252)}\n\n");
             //// Solved January 31, 2020
 
-
         } // Main method
+
+        public static void PrintJaggedArray<T>(T[][] jaggedArr)
+        {
+            for (int i = 0; i < jaggedArr.GetLength(0); i++)
+            {
+                for (int j = 0; j < jaggedArr[i].Length; j++)
+                {
+                    Console.Write(jaggedArr[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+        } // PrintArray method
 
     } // Program class
 
