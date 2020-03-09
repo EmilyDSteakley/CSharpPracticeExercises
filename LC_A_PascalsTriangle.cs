@@ -31,21 +31,71 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-        //public IList<IList<int>> Generate(int numRows)
-        //{
+        public IList<IList<int>> Generate(int numRows)
+        {
+            if (numRows <= 0)
+                throw new InvalidOperationException();
+
+            IList<IList<int>> output = new List<IList<int>>();
+            output.Add(new List<int> { 1 });
+            for (int i = 1; i < numRows; i++)
+            {
+                var temp = new List<int> { 1 };
+
+            }
 
 
 
 
+            return output;
+        }
+        // 208 ms <-- Beats 68.87%
+        // Solved March 9, 2020
 
-        //}
-        // XXX ms <-- Beats XX.XX%
-        // Solved February XX, 2020
+        public int[][] Generate2(int numRows)
+        {
+            var output = new int[numRows][];
+            for (int i = 0; i < numRows; i++)
+            {
+                output[i] = new int[i + 1];
+                output[i][0] = 1;
+                output[i][i] = 1;
+                if (i > 1)
+                {
+                    for (int j = 1; j < i; j++)
+                    {
+                        output[i][j] = output[i - 1][j - 1] + output[i - 1][j];
+                    }
+                }
+            }
+            return output;
+        }
+        // 208 ms <-- Beats 68.87%
+        // Solved March 9, 2020
 
 
 
-        // ---------------------------------------- XXX ms Solution on LeetCode ----------------------------------------
-
+        // ---------------------------------------- 188 ms Solution on LeetCode ----------------------------------------
+        public IList<IList<int>> Generate188(int numRows)
+        {
+            IList<IList<int>> res = new List<IList<int>>();
+            if (numRows == 0) return res;
+            res.Add(new List<int>() { 1 });
+            for (int i = 2; i <= numRows; i++)
+            {
+                IList<int> temp = new List<int>();
+                var prev = res[res.Count - 1];
+                var len = prev.Count;
+                temp.Add(1);
+                for (int j = 0; j < len - 1; j++)
+                {
+                    temp.Add(prev[j] + prev[j + 1]);
+                }
+                temp.Add(1);
+                res.Add(temp);
+            }
+            return res;
+        }
 
     } // LC_A_PascalsTriangle class
 
