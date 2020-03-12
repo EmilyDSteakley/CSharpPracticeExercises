@@ -10,11 +10,22 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // 118. Pascal's Triangle
-            Console.WriteLine("118. Pascal's Triangle");
-            var generator = new LC_A_PascalsTriangle();
-            Console.WriteLine("Example 1:");
-            PrintJaggedArray(generator.Generate2(5));
+            //// 121. Best Time to Buy and Sell Stock
+            //Console.WriteLine("121. Best Time to Buy and Sell Stock");
+            //var maxProfit = new LC_A_BestTimeToBuyAndSellStock();
+            //Console.WriteLine($"Example 1: {maxProfit.MaxProfit(new[] { 7, 1, 5, 3, 6, 4 })}");
+            //Console.WriteLine($"Example 2: {maxProfit.MaxProfit(new[] { 7, 6, 4, 3, 1 })}");
+            //Console.WriteLine($"Example 3: {maxProfit.MaxProfit(new[] { 1, 2 })}");
+            //// Solved March 11, 2020
+
+
+            //// 118. Pascal's Triangle
+            //Console.WriteLine("118. Pascal's Triangle");
+            //var generator = new LC_A_PascalsTriangle();
+            //Console.WriteLine("Example 1:");
+            //PrintNestedList(generator.Generate(5));
+            //PrintJaggedArray(generator.Generate2(5));
+            //// Solved March 11, 2020
 
 
             //// 202. Happy Number
@@ -206,6 +217,18 @@ namespace CSharpPracticeExercises
                 Console.WriteLine();
             }
         } // PrintArray method
+
+        public static void PrintNestedList(IList<IList<int>> nestedList)
+        {
+            for (int i = 0; i < nestedList.Count; i++)
+            {
+                for (int j = 0; j < nestedList[i].Count; j++)
+                {
+                    Console.Write(nestedList[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+        } // PrintNestedList method
 
     } // Program class
 
