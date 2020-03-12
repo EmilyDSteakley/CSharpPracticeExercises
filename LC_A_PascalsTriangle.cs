@@ -33,24 +33,28 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public IList<IList<int>> Generate(int numRows)
         {
-            if (numRows <= 0)
-                throw new InvalidOperationException();
-
             IList<IList<int>> output = new List<IList<int>>();
+
+            if (numRows <= 0)
+                return output;
+
             output.Add(new List<int> { 1 });
             for (int i = 1; i < numRows; i++)
             {
                 var temp = new List<int> { 1 };
-
+                for (int j = 1; j <= i - 1; j++)
+                {
+                    temp.Add(output[i - 1][j - 1] + output[i - 1][j]);
+                }
+                temp.Add(1);
+                output.Add(temp);
             }
-
-
-
-
             return output;
         }
-        // 208 ms <-- Beats 68.87%
-        // Solved March 9, 2020
+        // 204 ms <-- Beats 87.79%
+        // Solved March 11, 2020
+
+
 
         public int[][] Generate2(int numRows)
         {
