@@ -10,10 +10,11 @@
 
 - [X] Two Sum - February 18, 2020
 - [X] Find Words That Can Be Formed by Characters - March 5, 2020
-- [X] Pascal's Triangle - March 9, 2020
+- [X] Pascal's Triangle - March 11, 2020
 - [ ] Pascal's Triangle II
+- [X] Best Time to Buy and Sell Stock - March 11, 2020
 - [ ] Minimum Time Visiting All Points
-- [X] Find N Unitque Integers Sum up to Zero - February 22, 2020
+- [X] Find N Unique Integers Sum up to Zero - February 22, 2020
 - [X] Fibonacci Number - February 25, 2020
 - [ ] Find Common Characters
 - [ ] Two Sum II
