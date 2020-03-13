@@ -143,5 +143,7 @@ namespace CSharpPracticeExercises
 
             return next;
         }
-    }
-}
+
+    } // LC_S_CountAndSay class
+
+} // CSharpPracticeExercises namespace
