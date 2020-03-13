@@ -10,6 +10,18 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            var countAndSay = new LC_S_CountAndSay();
+            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(5)}");
+
+
+            //// 905. Sort Array By Parity
+            //Console.WriteLine("905. Sort Array By Parity");
+            //var sortParity = new LC_A_SortArrayByParity();
+            //Console.WriteLine($"Example 1: [{string.Join(", ", sortParity.SortArrayByParity(new[] { 3, 1, 2, 4 }))}]");
+            //Console.WriteLine($"Example 2: [{string.Join(", ", sortParity.SortArrayByParity(new[] { 0, 1, 2 }))}]");
+            //// Solved March 12, 2020
+
+
             //// 121. Best Time to Buy and Sell Stock
             //Console.WriteLine("121. Best Time to Buy and Sell Stock");
             //var maxProfit = new LC_A_BestTimeToBuyAndSellStock();
