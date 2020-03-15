@@ -82,8 +82,6 @@ namespace CSharpPracticeExercises
                 maxList.Add(max);
             }
 
-            Console.WriteLine(string.Join(", ", minList));
-            Console.WriteLine(string.Join(", ", maxList));
             foreach (int num in minList)
                 if (maxList.Contains(num))
                     output.Add(num);
