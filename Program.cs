@@ -10,19 +10,51 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            //// 1381. Design a Stack With Increment Operation
+            //Console.WriteLine("1381. Design a Stack With Increment Operation");
+            //var customStack = new LC_ST_DesignAStackWithIncrementOperation(3);
+            //customStack.Push(1);
+            //customStack.Push(2);
+            //Console.WriteLine(customStack);
+            //Console.WriteLine(customStack.Pop());
+            //customStack.Push(2);
+            //customStack.Push(3);
+            //customStack.Push(4);
+            //Console.WriteLine(customStack);
+            //customStack.Increment(5, 100);
+            //customStack.Increment(2, 100);
+            //Console.WriteLine(customStack);
+            //Console.WriteLine(customStack.Pop());
+            //Console.WriteLine(customStack.Pop());
+            //Console.WriteLine(customStack.Pop());
+            //Console.WriteLine(customStack.Pop());
+            //// Solved March 14, 2020
 
 
+            //// 1380.Lucky Numbers in a Matrix
+            //Console.WriteLine("1380. Lucky Numbers in a Matrix");
+            //var luckyNumbers = new LC_A_LuckyNumbersInAMatrix();
+            //var matrix1 = new int[3][];
+            //matrix1[0] = new int[] { 3, 7, 8 };
+            //matrix1[1] = new int[] { 9, 11, 13 };
+            //matrix1[2] = new int[] { 15, 16, 17 };
+            //Console.WriteLine($"Example 1: [{string.Join(", ", luckyNumbers.LuckyNumbers(matrix1))}]");
+
+            //var matrix2 = new int[3][];
+            //matrix2[0] = new int[] { 1, 10, 4, 2 };
+            //matrix2[1] = new int[] { 9, 3, 8, 7 };
+            //matrix2[2] = new int[] { 15, 16, 17, 12 };
+            //Console.WriteLine($"Example 2: [{string.Join(", ", luckyNumbers.LuckyNumbers(matrix2))}]");
+            //// Solved March 14, 2020
 
 
-
-            // 38. Count and Say
-            Console.WriteLine("38.Count and Say");
-            var countAndSay = new LC_S_CountAndSay();
-            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(1)}");
-            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(3)}");
-            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(5)}");
-            // Solved March 13, 2020
-
+            //// 38. Count and Say
+            //Console.WriteLine("38.Count and Say");
+            //var countAndSay = new LC_S_CountAndSay();
+            //Console.WriteLine($"Example 1: {countAndSay.CountAndSay(1)}");
+            //Console.WriteLine($"Example 1: {countAndSay.CountAndSay(3)}");
+            //Console.WriteLine($"Example 1: {countAndSay.CountAndSay(5)}");
+            //// Solved March 13, 2020
 
 
             //// 905. Sort Array By Parity
