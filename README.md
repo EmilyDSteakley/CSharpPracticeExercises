@@ -19,6 +19,7 @@
 - [ ] Find Common Characters
 - [ ] Two Sum II
 - [X] How Many Numbers Are Smaller Than the Current Number - February 29, 2020
+- [X] Lucky Numbers in a Matrix - March 14, 2020
 
 
 ###### Strings (S):
@@ -52,6 +53,11 @@
 ###### HashSet (H):
 
 - [X] N-Repeated Element in Size 2N Array - February 28, 2020
+
+
+###### Stacks (ST):
+
+- [X] Design a Stack With Increment Operation - March 14, 2020
   
   
   
