@@ -10,8 +10,19 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+            // 38. Count and Say
+            Console.WriteLine("38.Count and Say");
             var countAndSay = new LC_S_CountAndSay();
+            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(1)}");
+            Console.WriteLine($"Example 1: {countAndSay.CountAndSay(3)}");
             Console.WriteLine($"Example 1: {countAndSay.CountAndSay(5)}");
+            // Solved March 13, 2020
+
 
 
             //// 905. Sort Array By Parity
