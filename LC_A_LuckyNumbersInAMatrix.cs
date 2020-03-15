@@ -73,7 +73,6 @@ namespace CSharpPracticeExercises
             for (int k = 0; k < matrix[0].Length; k++)
             {
                 max = matrix[0][k];
-
                 for (int l = 0; l < matrix.Length; l++)
                 {
                     if (matrix[l][k] > max)

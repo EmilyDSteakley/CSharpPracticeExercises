@@ -96,7 +96,7 @@ namespace CSharpPracticeExercises
 
         public override string ToString()
         {
-            return string.Join(", ", stack);
+            return $"[{string.Join(", ", stack)}]";
         }
 
         // 156 ms <-- Beats XX.XX%
