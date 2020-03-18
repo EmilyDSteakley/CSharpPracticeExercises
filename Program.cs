@@ -10,6 +10,13 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            // Jaden Casing Strings
+            Console.WriteLine("Jaden Casing Strings");
+            var jadenCase = new CW_S_JadenCasingStrings();
+            Console.WriteLine(jadenCase.ToJadenCase("How Can Mirrors Be Real If Our Eyes Aren't Real"));
+            // Solved
+
+
             //// 1381. Design a Stack With Increment Operation
             //Console.WriteLine("1381. Design a Stack With Increment Operation");
             //var customStack = new LC_ST_DesignAStackWithIncrementOperation(3);
