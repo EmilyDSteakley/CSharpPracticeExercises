@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,19 +30,24 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public string ToJadenCase(string phrase)
         {
-
-
-            return String.Empty;
+            string[] words = phrase.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                var newWord = words[i].ToCharArray();
+                newWord[0] = char.ToUpper(newWord[0]);
+                words[i] = string.Join("", newWord);
+            }
+            return string.Join(" ", words);
         }
-        // 248 ms <-- Beats 84.16%
-        // Solved March 12, 2020
+        // Solved March 18, 2020
 
 
 
-        // ---------------------------------------- XXX ms Solution on LeetCode ----------------------------------------
-
-
-
+        // ---------------------------------------- Best Practices Solution on LeetCode ----------------------------------------
+        public string ToJadenCaseBest(string phrase)
+        {
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
+        }
 
     } // CW_S_JadenCasingStrings class
 
