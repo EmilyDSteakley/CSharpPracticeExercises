@@ -75,8 +75,8 @@
 
 
 ###### Arrays (A):
-- [ ] 2D Array - DS (Easy)
-- [X] Arrays: Left Rotation (Easy)
+- [X] 2D Array - DS (Easy) - March 19, 2020
+- [X] Arrays: Left Rotation (Easy) - February 28, 2020
 - [ ] New Year Chaos (Medium)
 - [ ] Minimum Swaps 2 (Medium)
 - [ ] Array Manipulation (Hard)
