@@ -10,11 +10,41 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Jaden Casing Strings
-            Console.WriteLine("Jaden Casing Strings");
-            var jadenCase = new CW_S_JadenCasingStrings();
-            Console.WriteLine(jadenCase.ToJadenCase("How can mirrors be real if our eyes aren't real"));
-            // Solved March 18, 2020
+            // 2D Array - DS
+            Console.WriteLine("2D Array - DS");
+            var hourglassSum = new HR_A_2DArrayDS();
+            var hourglassTest1 = new int[6][];
+            hourglassTest1[0] = new[] { 1, 1, 1, 0, 0, 0 };
+            hourglassTest1[1] = new[] { 0, 1, 0, 0, 0, 0 };
+            hourglassTest1[2] = new[] { 1, 1, 1, 0, 0, 0 };
+            hourglassTest1[3] = new[] { 0, 0, 0, 0, 0, 0 };
+            hourglassTest1[4] = new[] { 0, 0, 0, 0, 0, 0 };
+            hourglassTest1[5] = new[] { 0, 0, 0, 0, 0, 0 };
+            Console.WriteLine($"Example 1: {hourglassSum.HourglassSum(hourglassTest1)}");
+            var hourglassTest2 = new int[6][];
+            hourglassTest2[0] = new[] { 1, 1, 1, 0, 0, 0 };
+            hourglassTest2[1] = new[] { 0, 1, 0, 0, 0, 0 };
+            hourglassTest2[2] = new[] { 1, 1, 1, 0, 0, 0 };
+            hourglassTest2[3] = new[] { 0, 0, 2, 4, 4, 0 };
+            hourglassTest2[4] = new[] { 0, 0, 0, 2, 0, 0 };
+            hourglassTest2[5] = new[] { 0, 0, 1, 2, 4, 0 };
+            Console.WriteLine($"Example 2: {hourglassSum.HourglassSum(hourglassTest2)}");
+            var hourglassTest3 = new int[6][];
+            hourglassTest3[0] = new[] { -1, -1, 0, -9, -2, -2 };
+            hourglassTest3[1] = new[] { -2, -1, -6, -8, -2, -5 };
+            hourglassTest3[2] = new[] { -1, -1, -1, -2, -3, -4 };
+            hourglassTest3[3] = new[] { -1, -9, -2, -4, -4, -5 };
+            hourglassTest3[4] = new[] { -7, -3, -3, -2, -9, -9 };
+            hourglassTest3[5] = new[] { -1, -3, -1, -2, -4, -5 };
+            Console.WriteLine($"Example 3: {hourglassSum.HourglassSum(hourglassTest3)}");
+            // Solved March 19, 2020
+
+
+            //// Jaden Casing Strings
+            //Console.WriteLine("Jaden Casing Strings");
+            //var jadenCase = new CW_S_JadenCasingStrings();
+            //Console.WriteLine(jadenCase.ToJadenCase("How can mirrors be real if our eyes aren't real"));
+            //// Solved March 18, 2020
 
 
             //// 1381. Design a Stack With Increment Operation
