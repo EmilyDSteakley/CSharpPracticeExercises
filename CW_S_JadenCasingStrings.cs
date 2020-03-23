@@ -43,7 +43,7 @@ namespace CSharpPracticeExercises
 
 
 
-        // ---------------------------------------- Best Practices Solution on Code Wars ----------------------------------------
+        // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
         public string ToJadenCaseBest(string phrase)
         {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(phrase);
