@@ -10,15 +10,55 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Who likes it?
-            Console.WriteLine("Who likes it?");
-            var likes = new CW_S_WhoLikesIt();
-            Console.WriteLine($"Example 1: {likes.Likes(new string[0])}");
-            Console.WriteLine($"Example 2: {likes.Likes(new string[] { "Peter" })}");
-            Console.WriteLine($"Example 3: {likes.Likes(new string[] { "Jacob", "Alex" })}");
-            Console.WriteLine($"Example 4: {likes.Likes(new string[] { "Max", "John", "Mark" })}");
-            Console.WriteLine($"Example 5: {likes.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" })}");
-            // Solved March 23, 2020
+            // Sum of Digits / Digital Root
+            Console.WriteLine("Sum of Digits / Digital Root");
+            var digitalRoot = new CW_M_SumOfDigitsDigitalRoot();
+            Console.WriteLine($"Example 1: {digitalRoot.DigitalRoot(16)}");
+            Console.WriteLine($"Example 2: {digitalRoot.DigitalRoot(942)}");
+            Console.WriteLine($"Example 3: {digitalRoot.DigitalRoot(132189)}");
+            Console.WriteLine($"Example 4: {digitalRoot.DigitalRoot(493193)}");
+
+
+            //// Simple Encryption #1 - Alternating Split
+            //Console.WriteLine("Simple Encryption #1 - Alternating Split");
+            //var simple1 = new CW_S_SimpleEncryption1AlternatingSplit();
+            //Console.WriteLine($"Example 1: {simple1.Encrypt("This is a test!", 1)}");
+            //Console.WriteLine($"Example 1: {simple1.Decrypt("hsi  etTi sats!", 1)}");
+            //Console.WriteLine($"Example 2: {simple1.Encrypt("This is a test!", 2)}");
+            //Console.WriteLine($"Example 2: {simple1.Decrypt("s eT ashi tist!", 2)}");
+            //// Solved March 23, 2020
+
+            //// Binary Addition
+            //Console.WriteLine("Binary Addition");
+            //var addBinary = new CW_B_BinaryAddition();
+            //Console.WriteLine($"Example 1: {addBinary.AddBinary(1, 2)}");
+            //Console.WriteLine($"Example 2: {addBinary.AddBinary(42475, 6553)}");
+            //Console.WriteLine($"Example 3: {addBinary.AddBinary(30514, 12803)}");
+            //// Solved March 23, 2020
+
+
+            //// Counting Duplicates
+            //Console.WriteLine("Counting Duplicates");
+            //var duplicateCount = new CW_S_CountingDuplicates();
+            //Console.WriteLine($"Example 1: {duplicateCount.DuplicateCount("abcde")}");
+            //Console.WriteLine($"Example 2: {duplicateCount.DuplicateCount("aabbcde")}");
+            //Console.WriteLine($"Example 3: {duplicateCount.DuplicateCount("aabBcde")}");
+            //Console.WriteLine($"Example 4: {duplicateCount.DuplicateCount("indivisibility")}");
+            //Console.WriteLine($"Example 5: {duplicateCount.DuplicateCount("Indivisibilities")}");
+            //Console.WriteLine($"Example 6: {duplicateCount.DuplicateCount("aA11")}");
+            //Console.WriteLine($"Example 7: {duplicateCount.DuplicateCount("ABBA")}");
+            //// Solved March 23, 2020
+
+
+            //// Who likes it?
+            //Console.WriteLine("Who likes it?");
+            //var likes = new CW_S_WhoLikesIt();
+            //Console.WriteLine($"Example 1: {likes.Likes(new string[0])}");
+            //Console.WriteLine($"Example 2: {likes.Likes(new string[] { "Peter" })}");
+            //Console.WriteLine($"Example 3: {likes.Likes(new string[] { "Jacob", "Alex" })}");
+            //Console.WriteLine($"Example 4: {likes.Likes(new string[] { "Max", "John", "Mark" })}");
+            //Console.WriteLine($"Example 5: {likes.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" })}");
+            //// Solved March 23, 2020
 
 
             //// 2D Array - DS
