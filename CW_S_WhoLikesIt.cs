@@ -62,5 +62,7 @@ namespace CSharpPracticeExercises
                 default: return $"{names[0]}, {names[1]} and {names.Length - 2} others like this";
             }
         }
-    }
-}
+
+    } // CW_S_WhoLikesIt class
+
+} // CSharpPracticeExercises namespace
