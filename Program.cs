@@ -10,12 +10,23 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Vasya - Clerk
-            Console.WriteLine("Vasya - Clerk");
-            var line = new CW_M_VasyaClerk();
-            Console.WriteLine($"Example 1: {line.Tickets(new int[] { 25, 25, 50 })}");
-            Console.WriteLine($"Example 2: {line.Tickets(new int[] { 25, 100 })}");
-            Console.WriteLine($"Example 3: {line.Tickets(new int[] { 25, 25, 50, 50, 100 })}");
+            // Tic-Tac-Toe Checker
+            Console.WriteLine("Tic-Tac-Toe Checker");
+            var isSolved = new CW_A_TicTacToeChecker();
+            Console.WriteLine($"Example 1: {isSolved.IsSolved(new int[,] { { 1, 1, 1 }, { 0, 2, 2 }, { 0, 0, 0 } })}"); // 1
+            Console.WriteLine($"Example 2: {isSolved.IsSolved(new int[,] { { 0, 0, 1 }, { 0, 1, 2 }, { 2, 1, 0 } })}"); // -1
+            Console.WriteLine($"Example 3: {isSolved.IsSolved(new int[,] { { 2, 1, 1 }, { 1, 2, 0 }, { 2, 1, 2 } })}"); // 2
+            Console.WriteLine($"Example 4: {isSolved.IsSolved(new int[,] { { 1, 1, 2 }, { 2, 2, 1 }, { 1, 1, 2 } })}"); // 0
+            // Solved March 23, 2020
+
+
+            //// Vasya - Clerk
+            //Console.WriteLine("Vasya - Clerk");
+            //var line = new CW_M_VasyaClerk();
+            //Console.WriteLine($"Example 1: {line.Tickets(new int[] { 25, 25, 50 })}");
+            //Console.WriteLine($"Example 2: {line.Tickets(new int[] { 25, 100 })}");
+            //Console.WriteLine($"Example 3: {line.Tickets(new int[] { 25, 25, 50, 50, 100 })}");
+            //// Solved March 23, 2020
 
 
             //// Duplicate Encoder
