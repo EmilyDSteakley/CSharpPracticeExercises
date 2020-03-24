@@ -61,8 +61,8 @@
   
   
   
-  
-  
+
+
 ### HackerRank (HR)
 -------------------------------
 
@@ -175,11 +175,34 @@
 - [ ] Time Complexity: Primality (Medium)
 - [ ] Friend Circle Queries (Medium)
 - [ ] Maximum Xor (Medium)
+    
   
   
   
   
+### HackerRank (HR)
+-------------------------------
+
+###### String (S):
+- [X] Jaden Casing Strings - March 18, 2020
+- [X] Counting Duplicates - March 23, 2020
+- [X] Duplicate Encoder - March 23, 2020
+- [X] Simple Encryption #1 - Alternating Split - March 23, 2020
+- [X] Who likes it? - March 23, 2020
+
+
+###### Math (M):
+- [X] Sum Of Digits / Digital Root - March 23, 2020
+- [X] Vasya - Clerk - March 23, 2020
+
+
+###### Binary (B):
+- [X] Binary Addition - March 23, 2020
+
   
+  
+  
+
 ### Cracking the Coding Interview (CCI)
 -------------------------------
 
