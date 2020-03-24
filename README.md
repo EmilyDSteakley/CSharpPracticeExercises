@@ -180,10 +180,10 @@
   
   
   
-### HackerRank (HR)
+### Codewars (CW)
 -------------------------------
 
-###### String (S):
+###### Strings (S):
 - [X] Jaden Casing Strings - March 18, 2020
 - [X] Counting Duplicates - March 23, 2020
 - [X] Duplicate Encoder - March 23, 2020
@@ -194,10 +194,15 @@
 ###### Math (M):
 - [X] Sum Of Digits / Digital Root - March 23, 2020
 - [X] Vasya - Clerk - March 23, 2020
+- [ ] Josephus Permutation
 
 
 ###### Binary (B):
 - [X] Binary Addition - March 23, 2020
+
+
+###### Arrays (A):
+- [X] Tic-Tac-Toe Checker - March 23, 2020
 
   
   
