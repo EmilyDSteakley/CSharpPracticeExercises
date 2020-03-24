@@ -10,13 +10,22 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Duplicate Encoder
-            Console.WriteLine("Duplicate Encoder");
-            var duplicateEncoder = new CW_S_DuplicateEncoder();
-            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("din")}");
-            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("recede")}");
-            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("Success")}");
-            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("(( @")}");
+            // Vasya - Clerk
+            Console.WriteLine("Vasya - Clerk");
+            var line = new CW_M_VasyaClerk();
+            Console.WriteLine($"Example 1: {line.Tickets(new int[] { 25, 25, 50 })}");
+            Console.WriteLine($"Example 2: {line.Tickets(new int[] { 25, 100 })}");
+            Console.WriteLine($"Example 3: {line.Tickets(new int[] { 25, 25, 50, 50, 100 })}");
+
+
+            //// Duplicate Encoder
+            //Console.WriteLine("Duplicate Encoder");
+            //var duplicateEncoder = new CW_S_DuplicateEncoder();
+            //Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("din")}");
+            //Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("recede")}");
+            //Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("Success")}");
+            //Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("(( @")}");
+            //// Solved March 23, 2020
 
 
             //// Sum of Digits / Digital Root
