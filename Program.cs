@@ -10,13 +10,23 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Sum of Digits / Digital Root
-            Console.WriteLine("Sum of Digits / Digital Root");
-            var digitalRoot = new CW_M_SumOfDigitsDigitalRoot();
-            Console.WriteLine($"Example 1: {digitalRoot.DigitalRoot(16)}");
-            Console.WriteLine($"Example 2: {digitalRoot.DigitalRoot(942)}");
-            Console.WriteLine($"Example 3: {digitalRoot.DigitalRoot(132189)}");
-            Console.WriteLine($"Example 4: {digitalRoot.DigitalRoot(493193)}");
+            // Duplicate Encoder
+            Console.WriteLine("Duplicate Encoder");
+            var duplicateEncoder = new CW_S_DuplicateEncoder();
+            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("din")}");
+            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("recede")}");
+            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("Success")}");
+            Console.WriteLine($"Example 1: {duplicateEncoder.DuplicateEncoder("(( @")}");
+
+
+            //// Sum of Digits / Digital Root
+            //Console.WriteLine("Sum of Digits / Digital Root");
+            //var digitalRoot = new CW_M_SumOfDigitsDigitalRoot();
+            //Console.WriteLine($"Example 1: {digitalRoot.DigitalRoot(16)}");
+            //Console.WriteLine($"Example 2: {digitalRoot.DigitalRoot(942)}");
+            //Console.WriteLine($"Example 3: {digitalRoot.DigitalRoot(132189)}");
+            //Console.WriteLine($"Example 4: {digitalRoot.DigitalRoot(493193)}");
+            //// Solved March 23, 2020
 
 
             //// Simple Encryption #1 - Alternating Split
