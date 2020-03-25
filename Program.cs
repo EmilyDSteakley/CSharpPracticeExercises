@@ -10,13 +10,25 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Josephus Permutation
-            Console.WriteLine("Josephus Permutation");
-            var josephus = new CW_M_JosephusPermutation();
-            Console.Write($"Example 1: ");
-            PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7 }, 3));
-            PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 1));
-            // Solved March 24, 2020
+            // Josephus Survivor
+            Console.WriteLine("Josephus Survivor");
+            var josSurvivor = new CW_M_JoshephusSurvivor();
+            Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
+            Console.WriteLine($"Example 2: {josSurvivor.JosSurvivor(11, 9)}");
+            Console.WriteLine($"Example 3: {josSurvivor.JosSurvivor(100, 1)}");
+            Console.WriteLine($"Example 4: {josSurvivor.JosSurvivor(5, 300)}");
+            Console.WriteLine($"Example 5: {josSurvivor.JosSurvivor(300, 300)}");
+            // Solved March XX, 2020
+
+
+            //// Josephus Permutation
+            //Console.WriteLine("Josephus Permutation");
+            //var josephus = new CW_M_JosephusPermutation();
+            //Console.Write($"Example 1: ");
+            //PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7 }, 3));
+            //Console.Write($"Example 2: ");
+            //PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 1));
+            //// Solved March 24, 2020
 
 
             //// Tic-Tac-Toe Checker
