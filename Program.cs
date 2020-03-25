@@ -10,14 +10,23 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Tic-Tac-Toe Checker
-            Console.WriteLine("Tic-Tac-Toe Checker");
-            var isSolved = new CW_A_TicTacToeChecker();
-            Console.WriteLine($"Example 1: {isSolved.IsSolved(new int[,] { { 1, 1, 1 }, { 0, 2, 2 }, { 0, 0, 0 } })}"); // 1
-            Console.WriteLine($"Example 2: {isSolved.IsSolved(new int[,] { { 0, 0, 1 }, { 0, 1, 2 }, { 2, 1, 0 } })}"); // -1
-            Console.WriteLine($"Example 3: {isSolved.IsSolved(new int[,] { { 2, 1, 1 }, { 1, 2, 0 }, { 2, 1, 2 } })}"); // 2
-            Console.WriteLine($"Example 4: {isSolved.IsSolved(new int[,] { { 1, 1, 2 }, { 2, 2, 1 }, { 1, 1, 2 } })}"); // 0
-            // Solved March 23, 2020
+            // Josephus Permutation
+            Console.WriteLine("Josephus Permutation");
+            var josephus = new CW_M_JosephusPermutation();
+            Console.Write($"Example 1: ");
+            PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7 }, 3));
+            PrintList(josephus.JosephusPermutation(new List<object> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 1));
+            // Solved March 24, 2020
+
+
+            //// Tic-Tac-Toe Checker
+            //Console.WriteLine("Tic-Tac-Toe Checker");
+            //var isSolved = new CW_A_TicTacToeChecker();
+            //Console.WriteLine($"Example 1: {isSolved.IsSolved(new int[,] { { 1, 1, 1 }, { 0, 2, 2 }, { 0, 0, 0 } })}"); // 1
+            //Console.WriteLine($"Example 2: {isSolved.IsSolved(new int[,] { { 0, 0, 1 }, { 0, 1, 2 }, { 2, 1, 0 } })}"); // -1
+            //Console.WriteLine($"Example 3: {isSolved.IsSolved(new int[,] { { 2, 1, 1 }, { 1, 2, 0 }, { 2, 1, 2 } })}"); // 2
+            //Console.WriteLine($"Example 4: {isSolved.IsSolved(new int[,] { { 1, 1, 2 }, { 2, 2, 1 }, { 1, 1, 2 } })}"); // 0
+            //// Solved March 23, 2020
 
 
             //// Vasya - Clerk
@@ -402,6 +411,11 @@ namespace CSharpPracticeExercises
                 Console.WriteLine();
             }
         } // PrintNestedList method
+
+        public static void PrintList(List<object> list)
+        {
+            Console.WriteLine($"[{string.Join(", ", list)}]");
+        }
 
     } // Program class
 
