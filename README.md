@@ -194,7 +194,7 @@
 ###### Math (M):
 - [X] Sum Of Digits / Digital Root - March 23, 2020
 - [X] Vasya - Clerk - March 23, 2020
-- [ ] Josephus Permutation
+- [X] Josephus Permutation - March 25, 2020
 
 
 ###### Binary (B):
