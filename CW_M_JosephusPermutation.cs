@@ -44,15 +44,35 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public List<object> JosephusPermutation(List<object> items, int k)
         {
-
+            var result = new List<object>();
+            var next = 0;
+            while (items.Count > 0)
+            {
+                next += k - 1;
+                while (next >= items.Count)
+                    next -= items.Count;
+                result.Add(items[next]);
+                items.RemoveAt(next);
+            }
+            return result;
         }
-        // Solved March 23, 2020
+        // Solved March 25, 2020
 
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-
-
+        public static List<object> JosephusPermutationBest(List<object> items, int k)
+        {
+            List<object> res = new List<object>();
+            int pos = 0;
+            while (items.Count > 0)
+            {
+                pos = (pos + k - 1) % items.Count;
+                res.Add(items[pos]);
+                items.RemoveAt(pos);
+            }
+            return res;
+        }
 
     } // CW_M_JosephusPermutation class
 
