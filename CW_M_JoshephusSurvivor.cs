@@ -35,29 +35,33 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- My Solution ----------------------------------------
-        public List<object> JosephusPermutation(List<object> items, int k)
+        public int JosSurvivor(int n, int k)
         {
-            var result = new List<object>();
+            var items = new List<int>();
+            items.AddRange(Enumerable.Range(1, n));
+            PrintList(items);
+
             var next = 0;
-            while (items.Count > 0)
+            while (items.Count > 1)
             {
                 next += k - 1;
                 while (next >= items.Count)
                     next -= items.Count;
-                result.Add(items[next]);
+                Console.WriteLine(items[next]);
                 items.RemoveAt(next);
+                PrintList(items);
             }
-            return result;
+            return items[0];
+        }
+        // Solved March 26, 2020
+
+        public void PrintList(List<int> list)
+        {
+            Console.WriteLine($"[{string.Join(", ", list)}]");
         }
 
-        public int JosSurvivor(int n, int k)
-        {
-            return 0;
-        }  
-        // Solved March 25, 2020
-        
-        
-        
+
+
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
 
 
