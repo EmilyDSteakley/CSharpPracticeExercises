@@ -13,12 +13,15 @@ namespace CSharpPracticeExercises
             // Josephus Survivor
             Console.WriteLine("Josephus Survivor");
             var josSurvivor = new CW_M_JoshephusSurvivor();
-            Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
-            Console.WriteLine($"Example 2: {josSurvivor.JosSurvivor(11, 9)}");
-            Console.WriteLine($"Example 3: {josSurvivor.JosSurvivor(100, 1)}");
-            Console.WriteLine($"Example 4: {josSurvivor.JosSurvivor(5, 300)}");
-            Console.WriteLine($"Example 5: {josSurvivor.JosSurvivor(300, 300)}");
+            //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}"); // 4
+            //Console.WriteLine($"Example 2: {josSurvivor.JosSurvivor(11, 19)}"); // 10
+            //Console.WriteLine($"Example 3: {josSurvivor.JosSurvivor(40, 3)}"); // 28
+            //Console.WriteLine($"Example 4: {josSurvivor.JosSurvivor(100, 1)}"); // 100
+            //Console.WriteLine($"Example 5: {josSurvivor.JosSurvivor(5, 300)}"); // 1
+            //Console.WriteLine($"Example 6: {josSurvivor.JosSurvivor(300, 300)}"); // 265
             // Solved March XX, 2020
+
+            Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
 
 
             //// Josephus Permutation
