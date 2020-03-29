@@ -24,6 +24,45 @@ namespace CSharpPracticeExercises
             Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
 
 
+            //// 5370. Design Underground System
+            //Console.WriteLine("5370. Design Underground System");
+            //Console.WriteLine("Example 1:");
+            //UndergroundSystem undergroundSystem = new UndergroundSystem();
+            //undergroundSystem.CheckIn(45, "Leyton", 3);
+            //undergroundSystem.CheckIn(32, "Paradise", 8);
+            //undergroundSystem.CheckIn(27, "Leyton", 10);
+            //undergroundSystem.CheckOut(45, "Waterloo", 15);
+            //undergroundSystem.CheckOut(27, "Waterloo", 20);
+            //undergroundSystem.CheckOut(32, "Cambridge", 22);
+            //Console.WriteLine(undergroundSystem.GetAverageTime("Paradise", "Cambridge")); // 14
+            //Console.WriteLine(undergroundSystem.GetAverageTime("Leyton", "Waterloo")); // 11
+            //undergroundSystem.CheckIn(10, "Leyton", 24);
+            //Console.WriteLine(undergroundSystem.GetAverageTime("Leyton", "Waterloo")); // 11
+            //undergroundSystem.CheckOut(10, "Waterloo", 38);
+            //Console.WriteLine(undergroundSystem.GetAverageTime("Leyton", "Waterloo")); // 12
+            //// Solved March 28, 2020
+
+
+            //// 5369. Count Number of Teams
+            //Console.WriteLine("5369. Count Number of Teams");
+            //var numTeams = new LC_A_CountNumberOfTeams();
+            //Console.WriteLine($"Example 1: {numTeams.NumTeams(new int[] { 2, 5, 3, 4, 1 })}"); // 3
+            //Console.WriteLine($"Example 2: {numTeams.NumTeams(new int[] { 2, 1, 3 })}"); // 0
+            //Console.WriteLine($"Example 3: {numTeams.NumTeams(new int[] { 1, 2, 3, 4 })}"); // 4
+            //// Solved March 28, 2020
+
+
+            //// 1394. Find Lucky Integer in an Array
+            //Console.WriteLine("1394. Find Lucky Integer in an Array");
+            //var findLucky = new LC_A_FindLuckyIntegerInAnArray();
+            //Console.WriteLine($"Example 1: {findLucky.FindLucky(new int[] { 2, 2, 3, 4 })}"); // 2
+            //Console.WriteLine($"Example 2: {findLucky.FindLucky(new int[] { 1, 2, 2, 3, 3, 3 })}"); // 3
+            //Console.WriteLine($"Example 3: {findLucky.FindLucky(new int[] { 2, 2, 2, 3, 3 })}"); // -1
+            //Console.WriteLine($"Example 4: {findLucky.FindLucky(new int[] { 5 })}"); // -1
+            //Console.WriteLine($"Example 5: {findLucky.FindLucky(new int[] { 7, 7, 7, 7, 7, 7, 7 })}"); // 7
+            //// Solved March 28, 2020
+
+
             //// Josephus Permutation
             //Console.WriteLine("Josephus Permutation");
             //var josephus = new CW_M_JosephusPermutation();
