@@ -20,6 +20,8 @@
 - [ ] Two Sum II
 - [X] How Many Numbers Are Smaller Than the Current Number - February 29, 2020
 - [X] Lucky Numbers in a Matrix - March 14, 2020
+- [X] Find Lucky Integer in an Array - March 28, 2020
+- [X] Count Number of Teams - March 28, 2020
 
 
 ###### Strings (S):
@@ -58,6 +60,11 @@
 ###### Stacks (ST):
 
 - [X] Design a Stack With Increment Operation - March 14, 2020
+
+
+###### Design (D):
+
+- [X] Design Underground System - March 28, 2020
   
   
   
