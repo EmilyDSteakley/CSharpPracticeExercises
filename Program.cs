@@ -65,21 +65,21 @@ namespace CSharpPracticeExercises
             // Split Array Into Two Equal Sums
             Console.WriteLine("Split Array Into Two Equal Sums");
             var splitArray = new Interview_SplitArrayIntoTwoEqualSums();
-            Console.WriteLine($"Example 1: {splitArray.SplitArray(new[] { 2, 4, 4, 5, 5 })}");
-            Console.WriteLine($"Example 2: {splitArray.SplitArray(new[] { 1, 1, 2, 2 })}");
-            Console.WriteLine($"Example 3: {splitArray.SplitArray(new[] { -2, -4, -4, -5, -5 })}");
+            Console.WriteLine($"Example 1: {splitArray.SplitArray(new[] { 2, 4, 4, 5, 5 })}"); // 3
+            Console.WriteLine($"Example 2: {splitArray.SplitArray(new[] { 1, 1, 2, 2 })}"); // -1
+            Console.WriteLine($"Example 3: {splitArray.SplitArray(new[] { -2, -4, -4, -5, -5 })}"); // 3
             Console.WriteLine($"Example 4: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
             Console.WriteLine($"Example 5: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
             Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
             Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
-
-            //Console.WriteLine($"Example 1: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 5, 5 })}"); // 3
-            //Console.WriteLine($"Example 2: {splitArray.SplitArrayComplete(new[] { 1, 1, 2, 2 })}"); // -1
-            //Console.WriteLine($"Example 3: {splitArray.SplitArrayComplete(new[] { -2, -4, -4, -5, -5 })}"); // 3
-            //Console.WriteLine($"Example 4: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
-            //Console.WriteLine($"Example 5: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
-            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
-            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
+            Console.WriteLine("\nSplit Array Into Two Equal Sums (Complete)");
+            Console.WriteLine($"Example 1: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 5, 5 })}"); // 3
+            Console.WriteLine($"Example 2: {splitArray.SplitArrayComplete(new[] { 1, 1, 2, 2 })}"); // -1
+            Console.WriteLine($"Example 3: {splitArray.SplitArrayComplete(new[] { -2, -4, -4, -5, -5 })}"); // 3
+            Console.WriteLine($"Example 4: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
+            Console.WriteLine($"Example 5: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
+            Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
+            Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
 
 
 
