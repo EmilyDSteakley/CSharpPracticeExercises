@@ -25,7 +25,7 @@ namespace CSharpPracticeExercises
 
 
             // 707. Design Linked List
-            Console.WriteLine("707. Design Linked List");
+            //Console.WriteLine("707. Design Linked List");
             //MyLinkedList linkedList = new MyLinkedList(); // Initialize empty LinkedList
             //linkedList.AddAtHead(1);
             ////linkedList.PrintLinkedList();
@@ -49,15 +49,51 @@ namespace CSharpPracticeExercises
             //a.AddAtIndex(5, 0);
             //a.AddAtHead(6);
 
-            MyLinkedList b = new MyLinkedList();
-            b.AddAtHead(1);
-            b.AddAtTail(3);
-            b.AddAtIndex(1, 2);
-            Console.WriteLine(b.Get(1));
-            b.DeleteAtIndex(0);
-            Console.WriteLine(b.Get(0));
-            b.PrintLinkedList();
+            //MyLinkedList b = new MyLinkedList();
+            //b.AddAtHead(1);
+            //b.AddAtTail(3);
+            //b.AddAtIndex(1, 2);
+            //Console.WriteLine(b.Get(1));
+            //b.DeleteAtIndex(0);
+            //Console.WriteLine(b.Get(0));
+            //b.PrintLinkedList();
 
+
+
+
+
+            // Split Array Into Two Equal Sums
+            Console.WriteLine("Split Array Into Two Equal Sums");
+            var splitArray = new Interview_SplitArrayIntoTwoEqualSums();
+            Console.WriteLine($"Example 1: {splitArray.SplitArray(new[] { 2, 4, 4, 5, 5 })}");
+            Console.WriteLine($"Example 2: {splitArray.SplitArray(new[] { 1, 1, 2, 2 })}");
+            Console.WriteLine($"Example 3: {splitArray.SplitArray(new[] { -2, -4, -4, -5, -5 })}");
+            Console.WriteLine($"Example 4: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
+            Console.WriteLine($"Example 5: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
+            Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
+            Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
+
+            //Console.WriteLine($"Example 1: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 5, 5 })}"); // 3
+            //Console.WriteLine($"Example 2: {splitArray.SplitArrayComplete(new[] { 1, 1, 2, 2 })}"); // -1
+            //Console.WriteLine($"Example 3: {splitArray.SplitArrayComplete(new[] { -2, -4, -4, -5, -5 })}"); // 3
+            //Console.WriteLine($"Example 4: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
+            //Console.WriteLine($"Example 5: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
+            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
+            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
+
+
+
+            // Solved March 30, 2020
+
+
+            //// Reverse Words In String
+            //Console.WriteLine("Reverse Words In String");
+            //var reverseWords = new Interview_ReverseWordsInString();
+            //Console.Write($"Example 1: ");
+            //reverseWords.ReverseWords("I love to code");
+            //Console.Write($"Example 1 (No Split): ");
+            //reverseWords.ReverseWordsNoSplit("I love to code");
+            //// Solved March 30, 2020
 
 
             //// 5370. Design Underground System
