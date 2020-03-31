@@ -24,6 +24,17 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
 
 
+            // RGB To Hex Conversion
+            Console.WriteLine("RGB To Hex Conversion");
+            var rgb = new CW_AL_RGBToHexConversion();
+            Console.WriteLine($"Example 1: {rgb.Rgb(255, 255, 255)}"); // FFFFFF
+            Console.WriteLine($"Example 2: {rgb.Rgb(255, 255, 300)}"); // FFFFFF
+            Console.WriteLine($"Example 3: {rgb.Rgb(0, 0, 0)}"); // 000000
+            Console.WriteLine($"Example 4: {rgb.Rgb(148, 0, 211)}"); // 9400D3
+
+
+
+
             // 707. Design Linked List
             //Console.WriteLine("707. Design Linked List");
             //MyLinkedList linkedList = new MyLinkedList(); // Initialize empty LinkedList
@@ -36,54 +47,26 @@ namespace CSharpPracticeExercises
             //linkedList.DeleteAtIndex(1);                  // now the linked list is 1->3
             //Console.WriteLine(linkedList.Get(1));         // returns 3
 
-            //MyLinkedList a = new MyLinkedList();
-            //a.AddAtHead(7);
-            //a.AddAtHead(2);
-            //a.AddAtHead(1);
-            //a.AddAtIndex(3, 0);
-            //a.DeleteAtIndex(2);
-            //a.AddAtHead(6);
-            //a.AddAtTail(4);
-            //Console.WriteLine(a.Get(4));
-            //a.AddAtHead(4);
-            //a.AddAtIndex(5, 0);
-            //a.AddAtHead(6);
 
-            //MyLinkedList b = new MyLinkedList();
-            //b.AddAtHead(1);
-            //b.AddAtTail(3);
-            //b.AddAtIndex(1, 2);
-            //Console.WriteLine(b.Get(1));
-            //b.DeleteAtIndex(0);
-            //Console.WriteLine(b.Get(0));
-            //b.PrintLinkedList();
-
-
-
-
-
-            // Split Array Into Two Equal Sums
-            Console.WriteLine("Split Array Into Two Equal Sums");
-            var splitArray = new Interview_SplitArrayIntoTwoEqualSums();
-            Console.WriteLine($"Example 1: {splitArray.SplitArray(new[] { 2, 4, 4, 5, 5 })}"); // 3
-            Console.WriteLine($"Example 2: {splitArray.SplitArray(new[] { 1, 1, 2, 2 })}"); // -1
-            Console.WriteLine($"Example 3: {splitArray.SplitArray(new[] { -2, -4, -4, -5, -5 })}"); // 3
-            Console.WriteLine($"Example 4: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
-            Console.WriteLine($"Example 5: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
-            Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
-            Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
-            Console.WriteLine("\nSplit Array Into Two Equal Sums (Complete)");
-            Console.WriteLine($"Example 1: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 5, 5 })}"); // 3
-            Console.WriteLine($"Example 2: {splitArray.SplitArrayComplete(new[] { 1, 1, 2, 2 })}"); // -1
-            Console.WriteLine($"Example 3: {splitArray.SplitArrayComplete(new[] { -2, -4, -4, -5, -5 })}"); // 3
-            Console.WriteLine($"Example 4: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
-            Console.WriteLine($"Example 5: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
-            Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
-            Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
-
-
-
-            // Solved March 30, 2020
+            //// Split Array Into Two Equal Sums
+            //Console.WriteLine("Split Array Into Two Equal Sums");
+            //var splitArray = new Interview_SplitArrayIntoTwoEqualSums();
+            //Console.WriteLine($"Example 1: {splitArray.SplitArray(new[] { 2, 4, 4, 5, 5 })}"); // 3
+            //Console.WriteLine($"Example 2: {splitArray.SplitArray(new[] { 1, 1, 2, 2 })}"); // -1
+            //Console.WriteLine($"Example 3: {splitArray.SplitArray(new[] { -2, -4, -4, -5, -5 })}"); // 3
+            //Console.WriteLine($"Example 4: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
+            //Console.WriteLine($"Example 5: {splitArray.SplitArray(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
+            //Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
+            //Console.WriteLine($"Example 6: {splitArray.SplitArray(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
+            //Console.WriteLine("\nSplit Array Into Two Equal Sums (Complete)");
+            //Console.WriteLine($"Example 1: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 5, 5 })}"); // 3
+            //Console.WriteLine($"Example 2: {splitArray.SplitArrayComplete(new[] { 1, 1, 2, 2 })}"); // -1
+            //Console.WriteLine($"Example 3: {splitArray.SplitArrayComplete(new[] { -2, -4, -4, -5, -5 })}"); // 3
+            //Console.WriteLine($"Example 4: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 3, 2, 5, 5 })}"); // -1
+            //Console.WriteLine($"Example 5: {splitArray.SplitArrayComplete(new[] { 2, 4, 4, 1, 2, 1, 2, 5, 5 })}"); // 5
+            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 2, 2, -6, -3, 4, -3 })}"); // 3
+            //Console.WriteLine($"Example 6: {splitArray.SplitArrayComplete(new[] { 5, 1, 1, 1, 1, 1 })}"); // 1
+            //// Solved March 30, 2020
 
 
             //// Reverse Words In String
