@@ -49,8 +49,9 @@ namespace CSharpPracticeExercises
                     position++;
                 }
                 if (first == half)
-                    return position++;
-                else return -1;
+                    return position;
+                else 
+                    return -1;
             }
         }
 
@@ -60,50 +61,31 @@ namespace CSharpPracticeExercises
             var total = 0;
             foreach (int num in arr)
                 total += num;
-
-            var left = 0;
+           
+            var half = total / 2;
+            var position = 0;
             var leftTotal = 0;
-            var right = arr.Length - 1;
-            var rightTotal = 0;
 
-            if (total / 2 > 0)
+            if (half > 0)
             {
-                while (left <= right)
+                while (leftTotal < half)
                 {
-                    if (leftTotal < rightTotal)
-                    {
-                        leftTotal += arr[left++];
-                    }
-                    else
-                    {
-                        rightTotal += arr[right--];
-                    }
+                    leftTotal += arr[position++];
                 }
-                if (leftTotal == rightTotal)
-                    return arr.Length - right;
-                else
-                    return -1;
+                if (leftTotal == half)
+                    return position;
             }
             else
             {
-                while (left <= right)
+                while (leftTotal > half)
                 {
-                    if (leftTotal > rightTotal)
-                    {
-                        leftTotal += arr[left++];
-                    }
-                    else
-                    {
-                        rightTotal += arr[right--];
-                    }
+                    leftTotal += arr[position++];
                 }
-                if (leftTotal == rightTotal)
-                    return arr.Length - right;
-                else
-                    return -1;
+                if (leftTotal == half)
+                    return position;
             }
+            return -1;
         }
-
 
     } // Interview_SplitArrayIntoTwoEqualSums class
 
