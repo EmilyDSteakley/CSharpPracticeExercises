@@ -24,28 +24,28 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
 
 
-            // RGB To Hex Conversion
-            Console.WriteLine("RGB To Hex Conversion");
-            var rgb = new CW_AL_RGBToHexConversion();
-            Console.WriteLine($"Example 1: {rgb.Rgb(255, 255, 255)}"); // FFFFFF
-            Console.WriteLine($"Example 2: {rgb.Rgb(255, 255, 300)}"); // FFFFFF
-            Console.WriteLine($"Example 3: {rgb.Rgb(0, 0, 0)}"); // 000000
-            Console.WriteLine($"Example 4: {rgb.Rgb(148, 0, 211)}"); // 9400D3
+            //// RGB To Hex Conversion
+            //Console.WriteLine("RGB To Hex Conversion");
+            //var rgb = new CW_AL_RGBToHexConversion();
+            //Console.WriteLine($"Example 1: {rgb.Rgb(255, 255, 255)}"); // FFFFFF
+            //Console.WriteLine($"Example 2: {rgb.Rgb(255, 255, 300)}"); // FFFFFF
+            //Console.WriteLine($"Example 3: {rgb.Rgb(0, 0, 0)}"); // 000000
+            //Console.WriteLine($"Example 4: {rgb.Rgb(148, 0, 211)}"); // 9400D3
+            //// Solved March 30, 2020
 
 
-
-
-            // 707. Design Linked List
+            //// 707. Design Linked List
             //Console.WriteLine("707. Design Linked List");
             //MyLinkedList linkedList = new MyLinkedList(); // Initialize empty LinkedList
             //linkedList.AddAtHead(1);
-            ////linkedList.PrintLinkedList();
+            //linkedList.PrintLinkedList();
             //linkedList.AddAtTail(3);
-            ////linkedList.PrintLinkedList();
+            //linkedList.PrintLinkedList();
             //linkedList.AddAtIndex(1, 2);                  // linked list becomes 1->2->3
             //Console.WriteLine(linkedList.Get(1));         // returns 2
             //linkedList.DeleteAtIndex(1);                  // now the linked list is 1->3
             //Console.WriteLine(linkedList.Get(1));         // returns 3
+            //// Solved March 30, 2020
 
 
             //// Split Array Into Two Equal Sums
