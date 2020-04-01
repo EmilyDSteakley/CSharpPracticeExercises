@@ -23,6 +23,21 @@ namespace CSharpPracticeExercises
 
             //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
 
+            #region Solved Problems
+
+            //// Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
+            //Console.WriteLine("Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!");
+            //var sumDigPow = new CW_M_TakeANumberAndSumItsDigitsRaisedToTheConsecutivePowers();
+            //Console.Write("Example 1: ");
+            //PrintArray(sumDigPow.SumDigPow(1, 10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            //Console.Write("Example 2: ");
+            //PrintArray(sumDigPow.SumDigPow(1, 100)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 89]
+            //Console.Write("Example 3: ");
+            //PrintArray(sumDigPow.SumDigPow(90, 100)); // []
+            //Console.Write("Example 4: ");
+            //PrintArray(sumDigPow.SumDigPow(50, 150)); // [89, 135]
+            //// Solved March 31, 2020
+
 
             //// RGB To Hex Conversion
             //Console.WriteLine("RGB To Hex Conversion");
@@ -495,7 +510,11 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 2: {productSumCalc.SubtractProductAndSum(53252)}\n\n");
             //// Solved January 31, 2020
 
+            #endregion
+
         } // Main method
+
+        #region Print Methods
 
         public static void PrintJaggedArray<T>(T[][] jaggedArr)
         {
@@ -525,6 +544,13 @@ namespace CSharpPracticeExercises
         {
             Console.WriteLine($"[{string.Join(", ", list)}]");
         }
+
+        public static void PrintArray<T>(T[] array)
+        {
+            Console.WriteLine($"[{string.Join(", ", array)}]");
+        }
+
+        #endregion
 
     } // Program class
 
