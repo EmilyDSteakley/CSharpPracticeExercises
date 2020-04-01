@@ -10,20 +10,31 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Josephus Survivor
-            Console.WriteLine("Josephus Survivor");
-            var josSurvivor = new CW_M_JoshephusSurvivor();
-            //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}"); // 4
-            //Console.WriteLine($"Example 2: {josSurvivor.JosSurvivor(11, 19)}"); // 10
-            //Console.WriteLine($"Example 3: {josSurvivor.JosSurvivor(40, 3)}"); // 28
-            //Console.WriteLine($"Example 4: {josSurvivor.JosSurvivor(100, 1)}"); // 100
-            //Console.WriteLine($"Example 5: {josSurvivor.JosSurvivor(5, 300)}"); // 1
-            //Console.WriteLine($"Example 6: {josSurvivor.JosSurvivor(300, 300)}"); // 265
-            // Solved March XX, 2020
 
-            //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}");
+
+
+
+
 
             #region Solved Problems
+
+            //// Lucky Ticket
+            //Console.WriteLine("Lucky Ticket");
+            //var getLuckyTicket = new CW_AL_LuckyTicket();
+            //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(32683)}"); // 581077
+            //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(30610)}"); // 528287
+            //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(28758)}"); // 520007
+            //// Solved April 1, 2020
+            
+
+            //// Greed is Good
+            //Console.WriteLine("Greed is Good");
+            //var score = new CW_AL_GreedIsGood();
+            //Console.WriteLine($"Example 1: {score.Score(new[] { 5, 1, 3, 4, 1 })}"); // 250
+            //Console.WriteLine($"Example 2: {score.Score(new[] { 1, 1, 1, 3, 1 })}"); // 1100
+            //Console.WriteLine($"Example 3: {score.Score(new[] { 2, 4, 4, 5, 4 })}"); // 450
+            //// Solved April 1, 2020
+
 
             //// Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!
             //Console.WriteLine("Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!");
@@ -131,6 +142,18 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 4: {findLucky.FindLucky(new int[] { 5 })}"); // -1
             //Console.WriteLine($"Example 5: {findLucky.FindLucky(new int[] { 7, 7, 7, 7, 7, 7, 7 })}"); // 7
             //// Solved March 28, 2020
+
+
+            ////Josephus Survivor
+            //Console.WriteLine("Josephus Survivor");
+            //var josSurvivor = new CW_M_JoshephusSurvivor();
+            //Console.WriteLine($"Example 1: {josSurvivor.JosSurvivor(7, 3)}"); // 4
+            //Console.WriteLine($"Example 2: {josSurvivor.JosSurvivor(11, 19)}"); // 10
+            //Console.WriteLine($"Example 3: {josSurvivor.JosSurvivor(40, 3)}"); // 28
+            //Console.WriteLine($"Example 4: {josSurvivor.JosSurvivor(100, 1)}"); // 100
+            //Console.WriteLine($"Example 5: {josSurvivor.JosSurvivor(5, 300)}"); // 1
+            //Console.WriteLine($"Example 6: {josSurvivor.JosSurvivor(300, 300)}"); // 265
+            ////Solved March 26, 2020
 
 
             //// Josephus Permutation
