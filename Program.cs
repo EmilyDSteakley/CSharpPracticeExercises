@@ -22,10 +22,10 @@ namespace CSharpPracticeExercises
             //Console.WriteLine("Lucky Ticket");
             //var getLuckyTicket = new CW_AL_LuckyTicket();
             //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(32683)}"); // 581077
-            //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(30610)}"); // 528287
-            //Console.WriteLine($"Example 1: {getLuckyTicket.GetLuckyTicket(28758)}"); // 520007
+            //Console.WriteLine($"Example 2: {getLuckyTicket.GetLuckyTicket(30610)}"); // 528287
+            //Console.WriteLine($"Example 3: {getLuckyTicket.GetLuckyTicket(28758)}"); // 520007
             //// Solved April 1, 2020
-            
+
 
             //// Greed is Good
             //Console.WriteLine("Greed is Good");
