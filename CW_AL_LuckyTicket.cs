@@ -31,7 +31,7 @@ namespace CSharpPracticeExercises
             if (index < 0 || index > 55250)
                 return "Wrong index!";
 
-            var lucky = new List<int>();
+            var count = -1;
             foreach (var n in Enumerable.Range(0, 999999))
             {
                 var num = n;
@@ -51,41 +51,37 @@ namespace CSharpPracticeExercises
                     }
                 }
 
-
                 if (left == right)
-                {
-                    lucky.Add(n);
-                }
+                    if (++count == index)
+                        return n.ToString();
             }
 
-            return lucky[index].ToString();
+            return "Wrong index!";
         }
         // Solved April 1, 2020
 
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-        public class LuckyTicket
+
+        public static string GetLuckyTicketBest(int index)
         {
-            public static string GetLuckyTicket(int index)
+            int temp = 0;
+            for (int i = 0; i < 1000000; i++)
             {
-                int temp = 0;
-                for (int i = 0; i < 1000000; i++)
-                {
-                    var ticket = i.ToString();
-                    while (ticket.Length < 6) ticket = "0" + ticket;
-                    if (IsLucky(ticket) && temp++ == index) return ticket;
-                }
-                return "Wrong index!";
+                var ticket = i.ToString();
+                while (ticket.Length < 6) ticket = "0" + ticket;
+                if (IsLucky(ticket) && temp++ == index) return ticket;
             }
-
-            private static bool IsLucky(string ticket)
-            {
-                return Convert(ticket[0]) + Convert(ticket[1]) + Convert(ticket[2]) == Convert(ticket[3]) + Convert(ticket[4]) + Convert(ticket[5]);
-            }
-
-            private static int Convert(char digit) => System.Convert.ToInt32(digit);
+            return "Wrong index!";
         }
+
+        private static bool IsLucky(string ticket)
+        {
+            return Convert(ticket[0]) + Convert(ticket[1]) + Convert(ticket[2]) == Convert(ticket[3]) + Convert(ticket[4]) + Convert(ticket[5]);
+        }
+
+        private static int Convert(char digit) => System.Convert.ToInt32(digit);
 
     } // CW_AL_LuckyTicket class
 
