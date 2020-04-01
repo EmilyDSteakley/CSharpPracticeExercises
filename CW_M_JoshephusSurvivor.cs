@@ -39,7 +39,7 @@ namespace CSharpPracticeExercises
         {
             var items = new List<int>();
             items.AddRange(Enumerable.Range(1, n));
-            PrintList(items);
+            //PrintList(items);
 
             var next = 0;
             while (items.Count > 1)
@@ -47,9 +47,9 @@ namespace CSharpPracticeExercises
                 next += k - 1;
                 while (next >= items.Count)
                     next -= items.Count;
-                Console.WriteLine(items[next]);
+                //Console.WriteLine(items[next]);
                 items.RemoveAt(next);
-                PrintList(items);
+                //PrintList(items);
             }
             return items[0];
         }
@@ -63,8 +63,16 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-
-
+        public class JosephusSurvivor
+        {
+            public static int JosSurvivor(int n, int k)
+            {
+                if (n == 1)
+                    return 1;
+                else
+                    return (JosSurvivor(n - 1, k) + k - 1) % n + 1;
+            }
+        }
 
     } // CW_M_JoshephusSurvivor class
 
