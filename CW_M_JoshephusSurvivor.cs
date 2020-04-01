@@ -63,15 +63,20 @@ namespace CSharpPracticeExercises
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-        public class JosephusSurvivor
+        public static int JosSurvivorBest(int n, int k)
         {
-            public static int JosSurvivor(int n, int k)
-            {
-                if (n == 1)
-                    return 1;
-                else
-                    return (JosSurvivor(n - 1, k) + k - 1) % n + 1;
-            }
+            if (n == 1)
+                return 1;
+            else
+                return (JosSurvivorBest(n - 1, k) + k - 1) % n + 1;
+        }
+
+        public static int JosSurvivorBest2(int n, int k)
+        {
+            int i = 1;
+            for (int j = 1; j <= n; j++)
+                i = (i + k) % j;
+            return i + 1;
         }
 
     } // CW_M_JoshephusSurvivor class
