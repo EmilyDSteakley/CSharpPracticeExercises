@@ -10,22 +10,21 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Product of consecutive Fib numbers
-            Console.WriteLine("Product of consecutive Fib numbers");
-            var productFib = new CW_M_ProductOfConsecutiveFibNumbers();
+
+
+            #region Solved Problems
+
+            //// Product of consecutive Fib numbers
+            //Console.WriteLine("Product of consecutive Fib numbers");
+            //var productFib = new CW_M_ProductOfConsecutiveFibNumbers();
             //Console.Write("Example 1: ");
             //PrintArray(productFib.ProductFib(714)); // [21, 34, 1]
             //Console.Write("Example 2: ");
             //PrintArray(productFib.ProductFib(800)); // [34, 55, 0]
             //Console.Write("Example 3: ");
             //PrintArray(productFib.ProductFib(4895)); // [55, 89, 1]
-            // Solved April XX, 2020
+            //// Solved April 2, 2020
 
-            PrintArray(productFib.ProductFib(14284196614945309248)); // [2971215073, 4807526976, 1]
-
-            Console.WriteLine(productFib.Fib(47));
-
-            #region Solved Problems
 
             //// Moving Zeroes To The End
             //Console.WriteLine("Moving Zeroes To The End");
