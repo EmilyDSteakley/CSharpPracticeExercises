@@ -37,32 +37,16 @@ namespace CSharpPracticeExercises
 
             var aPos = a.Length;
             var bPos = b.Length;
-
-            int longer;
-            if (aPos >= bPos)
-                longer = aPos;
-            else
-                longer = bPos;
-
+            int longer = Math.Max(aPos, bPos);
             var carry = 0;
             for (int i = longer - 1; i >= 0; i--)
             {
-                char aNum;
-                if (aPos > 0)
-                    aNum = a[--aPos];
-                else
-                    aNum = '0';
-
-                char bNum;
-                if (bPos > 0)
-                    bNum = b[--bPos];
-                else
-                    bNum = '0';
-
-                output.Push(Add(aNum, bNum, ref carry));
+                char aDigit = aPos > 0 ? a[--aPos] : '0';
+                char bDigit = bPos > 0 ? b[--bPos] : '0';
+                output.Push(Add(aDigit, bDigit, ref carry));
             }
 
-            if (aPos == bPos && carry != 0)
+            if (carry != 0)
                 output.Push(carry);
 
             while (output.Count != 0)
@@ -74,18 +58,10 @@ namespace CSharpPracticeExercises
         public double Add(char a, char b, ref int carry)
         {
             var sum = char.GetNumericValue(a) + char.GetNumericValue(b) + carry;
-            if (sum < 10)
-            {
-                carry = 0;
-                return sum;
-            }
-            else
-            {
-                carry = 1;
-                return sum % 10;
-            }
+            carry = (int) sum / 10;
+            return sum % 10;
         }
-        // Solved April XX, 2020
+        // Solved April 1, 2020
 
 
 
