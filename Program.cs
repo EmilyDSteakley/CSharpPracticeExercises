@@ -21,21 +21,31 @@ namespace CSharpPracticeExercises
             //PrintArray(productFib.ProductFib(4895)); // [55, 89, 1]
             //// Solved April XX, 2020
 
-
-            // Adding Big Numbers
-            Console.WriteLine("Adding Big Numbers");
-            var add = new CW_M_AddingBigNumbers();
-            Console.WriteLine($"Example 1: {add.Add("123", "321")}"); // "444"
-            Console.WriteLine($"Example 2: {add.Add("11", "99")}"); // "110"
-            Console.WriteLine($"Example 3: {add.Add("999999999", "1")}"); // "1000000000"
-            Console.WriteLine($"Example 4: {add.Add("3849265715", "3926589403")}"); // "7775855118"
-            Console.WriteLine($"Example 5: {add.Add("17362495037638495482", "9876543210987654321")}"); // "27239038248626149803"
-            Console.WriteLine($"Example 6: {add.Add("2748349584623652173847298", "5946273819455736271839274")}"); // "8694623404079388445686572"
+            // Moving Zeroes To The End
+            Console.WriteLine("Moving Zeroes To The End");
+            var moveZeroes = new CW_A_MovingZerosToTheEnd();
+            Console.Write("Example 1: ");
+            PrintArray(moveZeroes.MoveZeroes(new[] { 1, 2, 0, 1, 0, 1, 0, 3, 0 })); // [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
+            Console.Write("Example 2: ");
+            PrintArray(moveZeroes.MoveZeroes(new[] { 4, 6, 2, 0, 0, 2, 0, 0, 0, 5, 0 })); // [4, 6, 2, 2, 5, 0, 0, 0, 0, 0, 0]
+            Console.Write("Example 3: ");
+            PrintArray(moveZeroes.MoveZeroes(new[] { 2, 7, 4, 0, 0, 0, 0, 1, 3, 0, 4, 0, 1 })); // [2, 7, 4, 1, 3, 4, 1, 0, 0, 0, 0, 0, 0]
             // Solved April XX, 2020
 
 
-
             #region Solved Problems
+
+            //// Adding Big Numbers
+            //Console.WriteLine("Adding Big Numbers");
+            //var add = new CW_M_AddingBigNumbers();
+            //Console.WriteLine($"Example 1: {add.Add("123", "321")}"); // "444"
+            //Console.WriteLine($"Example 2: {add.Add("11", "99")}"); // "110"
+            //Console.WriteLine($"Example 3: {add.Add("999999999", "1")}"); // "1000000000"
+            //Console.WriteLine($"Example 4: {add.Add("3849265715", "3926589403")}"); // "7775855118"
+            //Console.WriteLine($"Example 5: {add.Add("17362495037638495482", "9876543210987654321")}"); // "27239038248626149803"
+            //Console.WriteLine($"Example 6: {add.Add("2748349584623652173847298", "5946273819455736271839274")}"); // "8694623404079388445686572"
+            //// Solved April 01, 2020
+
 
             //// Lucky Ticket
             //Console.WriteLine("Lucky Ticket");
