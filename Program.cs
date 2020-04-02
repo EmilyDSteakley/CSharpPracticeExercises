@@ -10,9 +10,28 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            //// Product of consecutive Fib numbers
+            //Console.WriteLine("Product of consecutive Fib numbers");
+            //var productFib = new CW_M_ProductOfConsecutiveFibNumbers();
+            //Console.Write("Example 1: ");
+            //PrintArray(productFib.ProductFib(714)); // [21, 34, 1]
+            //Console.Write("Example 2: ");
+            //PrintArray(productFib.ProductFib(800)); // [34, 55, 0]
+            //Console.Write("Example 3: ");
+            //PrintArray(productFib.ProductFib(4895)); // [55, 89, 1]
+            //// Solved April XX, 2020
 
 
-
+            // Adding Big Numbers
+            Console.WriteLine("Adding Big Numbers");
+            var add = new CW_M_AddingBigNumbers();
+            Console.WriteLine($"Example 1: {add.Add("123", "321")}"); // "444"
+            Console.WriteLine($"Example 2: {add.Add("11", "99")}"); // "110"
+            Console.WriteLine($"Example 3: {add.Add("999999999", "1")}"); // "1000000000"
+            Console.WriteLine($"Example 4: {add.Add("3849265715", "3926589403")}"); // "7775855118"
+            Console.WriteLine($"Example 5: {add.Add("17362495037638495482", "9876543210987654321")}"); // "27239038248626149803"
+            Console.WriteLine($"Example 6: {add.Add("2748349584623652173847298", "5946273819455736271839274")}"); // "8694623404079388445686572"
+            // Solved April XX, 2020
 
 
 
