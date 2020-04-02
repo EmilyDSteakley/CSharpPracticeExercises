@@ -53,34 +53,52 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public ulong[] ProductFib(ulong prod)
         {
-            return null;
+            ulong result = 0;
+            ulong first = 0;
+            ulong second = 0;
+            for (ulong i = 0; result < prod; i++)
+            {
+                first = Fib(i);
+                second = Fib(i + 1);
+                result = first * second;
+            }
+            if (result == prod)
+                return new ulong[] { first, second, 1 };
+            else
+                return new ulong[] { first, second, 0 };
         }
 
-        public int Fib24(int N)
+        public ulong Fib(ulong N)
         {
-            int before_1 = 0, before_2 = 1, total = 0;
-            if (N == 1 || N == 2) return 1;
-            for (int i = 1; i <= N; i++)
+            ulong before1 = 0;
+            ulong before2 = 1;
+            ulong total = 0;
+            for (ulong i = 1; i <= N; i++)
             {
-                total = before_1 + before_2;
-                before_2 = before_1;
-                before_1 = total;
+                total = before1 + before2;
+                (before2, before1) = (before1, total);
             }
             return total;
         }
-
-        // Solved April XX, 2020
+        // Solved April 2, 2020
 
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-
-
-
-
-
-
-
+        public static ulong[] productFib(ulong prod)
+        {
+            ulong[] result = { 0, 1, 0 };
+            ulong next = 1;
+            while (result[0] * result[1] < prod)
+            {
+                next = result[0] + result[1];
+                result[0] = result[1];
+                result[1] = next;
+            }
+            if (result[0] * result[1] == prod)
+                result[2] = 1;
+            return result;
+        }
 
     } // CW_M_ProductOfConsecutiveFibNumbers class
 
