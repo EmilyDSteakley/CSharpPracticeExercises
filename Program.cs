@@ -10,30 +10,34 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            //// Product of consecutive Fib numbers
-            //Console.WriteLine("Product of consecutive Fib numbers");
-            //var productFib = new CW_M_ProductOfConsecutiveFibNumbers();
+            // Product of consecutive Fib numbers
+            Console.WriteLine("Product of consecutive Fib numbers");
+            var productFib = new CW_M_ProductOfConsecutiveFibNumbers();
             //Console.Write("Example 1: ");
             //PrintArray(productFib.ProductFib(714)); // [21, 34, 1]
             //Console.Write("Example 2: ");
             //PrintArray(productFib.ProductFib(800)); // [34, 55, 0]
             //Console.Write("Example 3: ");
             //PrintArray(productFib.ProductFib(4895)); // [55, 89, 1]
-            //// Solved April XX, 2020
-
-            // Moving Zeroes To The End
-            Console.WriteLine("Moving Zeroes To The End");
-            var moveZeroes = new CW_A_MovingZerosToTheEnd();
-            Console.Write("Example 1: ");
-            PrintArray(moveZeroes.MoveZeroes(new[] { 1, 2, 0, 1, 0, 1, 0, 3, 0 })); // [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
-            Console.Write("Example 2: ");
-            PrintArray(moveZeroes.MoveZeroes(new[] { 4, 6, 2, 0, 0, 2, 0, 0, 0, 5, 0 })); // [4, 6, 2, 2, 5, 0, 0, 0, 0, 0, 0]
-            Console.Write("Example 3: ");
-            PrintArray(moveZeroes.MoveZeroes(new[] { 2, 7, 4, 0, 0, 0, 0, 1, 3, 0, 4, 0, 1 })); // [2, 7, 4, 1, 3, 4, 1, 0, 0, 0, 0, 0, 0]
             // Solved April XX, 2020
 
+            PrintArray(productFib.ProductFib(14284196614945309248)); // [2971215073, 4807526976, 1]
+
+            Console.WriteLine(productFib.Fib(47));
 
             #region Solved Problems
+
+            //// Moving Zeroes To The End
+            //Console.WriteLine("Moving Zeroes To The End");
+            //var moveZeroes = new CW_A_MovingZerosToTheEnd();
+            //Console.Write("Example 1: ");
+            //PrintArray(moveZeroes.MoveZeroes(new[] { 1, 2, 0, 1, 0, 1, 0, 3, 0 })); // [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
+            //Console.Write("Example 2: ");
+            //PrintArray(moveZeroes.MoveZeroes(new[] { 4, 6, 2, 0, 0, 2, 0, 0, 0, 5, 0 })); // [4, 6, 2, 2, 5, 0, 0, 0, 0, 0, 0]
+            //Console.Write("Example 3: ");
+            //PrintArray(moveZeroes.MoveZeroes(new[] { 2, 7, 4, 0, 0, 0, 0, 1, 3, 0, 4, 0, 1 })); // [2, 7, 4, 1, 3, 4, 1, 0, 0, 0, 0, 0, 0]
+            //// Solved April 2, 2020
+
 
             //// Adding Big Numbers
             //Console.WriteLine("Adding Big Numbers");
