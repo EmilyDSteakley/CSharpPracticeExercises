@@ -10,7 +10,10 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
+            // Double Cola
+            Console.WriteLine("Double Cola");
 
+            Console.WriteLine(63 % 5);
 
             #region Solved Problems
 
