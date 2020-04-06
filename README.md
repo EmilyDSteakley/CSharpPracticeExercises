@@ -26,15 +26,14 @@
 
 ###### Strings (S):
 
-- [ ] Unique Morse Code Words
 - [X] Reverse String - February 10, 2020
 - [X] Reverse Words in a String III - February 11, 2020
-- [ ] Roman to Integer
 - [X] Valid Palindrome - February 11, 2020
 - [X] Valid Palindrome II - February 18, 2020
 - [ ] Valid Parentheses
 - [ ] Long Pressed Name
 - [ ] Longest Palindromic Substring
+- [X] Number of Steps to Reduce a Number in Binary Representation to One - April 4, 2020
 
 
 ###### Math (M):
@@ -57,18 +56,57 @@
 - [X] N-Repeated Element in Size 2N Array - February 28, 2020
 
 
-###### Stacks (ST):
-
-- [X] Design a Stack With Increment Operation - March 14, 2020
-
-
 ###### Design (D):
 
+- [X] Design a Stack With Increment Operation - March 14, 2020
 - [X] Design Underground System - March 28, 2020
-- [ ] Design Linked List
+- [X] Design Linked List - March 30, 2020
+
+
+###### Sorting (SO):
+
+- [X] Minimum Subsequence in Non-Increasing Order - April 4, 2020
+      
   
   
   
+  
+### Codewars (CW)
+-------------------------------
+
+###### Arrays (A):
+- [X] Tic-Tac-Toe Checker - March 23, 2020
+- [X] Moving Zeroes To The End - April 2, 2020
+  
+
+###### Strings (S):
+- [X] Jaden Casing Strings - March 18, 2020
+- [X] Counting Duplicates - March 23, 2020
+- [X] Duplicate Encoder - March 23, 2020
+- [X] Simple Encryption #1 - Alternating Split - March 23, 2020
+- [X] Who likes it? - March 23, 2020
+
+
+###### Math (M):
+- [X] Sum Of Digits / Digital Root - March 23, 2020
+- [X] Vasya - Clerk - March 23, 2020
+- [X] Josephus Permutation - March 25, 2020
+- [X] Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!! - March 31, 2020
+- [X] Adding Big Numbers - April 1, 2020
+- [X] Product of consecutive Fib numbers - April 
+
+
+###### Binary (B):
+- [X] Binary Addition - March 23, 2020
+
+
+###### Algorithms (AL):
+- [X] RGB To Hex Conversion - March 30, 2020
+- [X] Greed is Good - April 1, 2020
+- [X] Lucky Ticket - April 1, 2020
+  
+
+
 
 
 ### HackerRank (HR)
@@ -183,34 +221,6 @@
 - [ ] Time Complexity: Primality (Medium)
 - [ ] Friend Circle Queries (Medium)
 - [ ] Maximum Xor (Medium)
-    
-  
-  
-  
-  
-### Codewars (CW)
--------------------------------
-
-###### Strings (S):
-- [X] Jaden Casing Strings - March 18, 2020
-- [X] Counting Duplicates - March 23, 2020
-- [X] Duplicate Encoder - March 23, 2020
-- [X] Simple Encryption #1 - Alternating Split - March 23, 2020
-- [X] Who likes it? - March 23, 2020
-
-
-###### Math (M):
-- [X] Sum Of Digits / Digital Root - March 23, 2020
-- [X] Vasya - Clerk - March 23, 2020
-- [X] Josephus Permutation - March 25, 2020
-
-
-###### Binary (B):
-- [X] Binary Addition - March 23, 2020
-
-
-###### Arrays (A):
-- [X] Tic-Tac-Toe Checker - March 23, 2020
 
   
   
@@ -229,3 +239,13 @@
 
 ###### 3. Stacks and Queues (SQ):
 - [ ] Three in One
+
+  
+  
+  
+
+### Cracking the Coding Interview (CCI)
+-------------------------------
+
+- [X] Reverse Words in String - March 30, 2020
+- [X] Split Array Into Two Equal Sums - March 30, 2020
