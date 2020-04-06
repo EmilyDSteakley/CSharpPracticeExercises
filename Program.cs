@@ -15,7 +15,45 @@ namespace CSharpPracticeExercises
 
             Console.WriteLine(63 % 5);
 
+
+
+            // 1405.Longest Happy String
+            Console.WriteLine("1405. Longest Happy String");
+            var longestDiverseString = new LC_S_LongestHappyString();
+            Console.WriteLine(longestDiverseString.LongestDiverseString(1, 1, 7)); // length = 8
+            Console.WriteLine(longestDiverseString.LongestDiverseString(2, 2, 1)); // length = 5
+            Console.WriteLine(longestDiverseString.LongestDiverseString(7, 1, 0)); // length = 5
+            Console.WriteLine(longestDiverseString.LongestDiverseString(4, 4, 3)); // length = 11
+            Console.WriteLine(longestDiverseString.LongestDiverseString(1, 3, 5)); // length = 9
+
+
+
+
+
+
             #region Solved Problems
+
+            //// 1404. Number of Steps to Reduce a Number in Binary Representation to One
+            //Console.WriteLine("1404. Number of Steps to Reduce a Number in Binary Representation to One");
+            //var numSteps = new LC_S_NumberOfStepsToReduceANumberInBinaryRepresentationToOne();
+            //Console.WriteLine(numSteps.NumSteps("1101")); // 6
+            //Console.WriteLine(numSteps.NumSteps("10")); // 1
+            //Console.WriteLine(numSteps.NumSteps("1")); // 1
+            //Console.WriteLine(numSteps.NumSteps("1111011110000011100000110001011011110010111001010111110001")); // 85
+            //Console.WriteLine(numSteps.NumSteps("1111110011101010110011100100101110010100101110111010111110110010")); // 89
+            //Console.WriteLine(numSteps.NumSteps("100100001010010101101000111100100111101111000111111010010001100001000100011001")); // 120
+            //// Solved April 4, 2020
+
+
+            //// 1403. Minimum Subsequence in Non-Increasing Order
+            //Console.WriteLine("1403. Minimum Subsequence in Non-Increasing Order");
+            //var minSubsequence = new LC_SO_MinimumSubsequenceInNonIncreasingOrder();
+            //Console.WriteLine("Example 1: ");
+            //Console.WriteLine($"[{string.Join(", ", minSubsequence.MinSubsequence(new[] { 4, 3, 10, 9, 8 }))}]"); // [10, 9]
+            //Console.WriteLine($"[{string.Join(", ", minSubsequence.MinSubsequence(new[] { 4, 4, 7, 6, 7 }))}]"); // [7, 7, 6]
+            //Console.WriteLine($"[{string.Join(", ", minSubsequence.MinSubsequence(new[] { 6 }))}]"); // [6]
+            //// Solved April 4, 2020
+
 
             //// Product of consecutive Fib numbers
             //Console.WriteLine("Product of consecutive Fib numbers");
@@ -50,7 +88,7 @@ namespace CSharpPracticeExercises
             //Console.WriteLine($"Example 4: {add.Add("3849265715", "3926589403")}"); // "7775855118"
             //Console.WriteLine($"Example 5: {add.Add("17362495037638495482", "9876543210987654321")}"); // "27239038248626149803"
             //Console.WriteLine($"Example 6: {add.Add("2748349584623652173847298", "5946273819455736271839274")}"); // "8694623404079388445686572"
-            //// Solved April 01, 2020
+            //// Solved April 1, 2020
 
 
             //// Lucky Ticket
@@ -321,7 +359,7 @@ namespace CSharpPracticeExercises
 
             //// 1381. Design a Stack With Increment Operation
             //Console.WriteLine("1381. Design a Stack With Increment Operation");
-            //var customStack = new LC_ST_DesignAStackWithIncrementOperation(3);
+            //var customStack = new LC_D_DesignAStackWithIncrementOperation(3);
             //customStack.Push(1);
             //customStack.Push(2);
             //Console.WriteLine(customStack);
@@ -599,6 +637,11 @@ namespace CSharpPracticeExercises
         } // PrintNestedList method
 
         public static void PrintList(List<object> list)
+        {
+            Console.WriteLine($"[{string.Join(", ", list)}]");
+        }
+
+        public static void PrintList<T>(List<T> list)
         {
             Console.WriteLine($"[{string.Join(", ", list)}]");
         }
