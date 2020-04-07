@@ -10,28 +10,56 @@ namespace CSharpPracticeExercises
     {
         static void Main(string[] args)
         {
-            // Double Cola
-            Console.WriteLine("Double Cola");
 
-            Console.WriteLine(63 % 5);
-
-
-
-            // 1405.Longest Happy String
-            Console.WriteLine("1405. Longest Happy String");
-            var longestDiverseString = new LC_S_LongestHappyString();
-            Console.WriteLine(longestDiverseString.LongestDiverseString(1, 1, 7)); // length = 8
-            Console.WriteLine(longestDiverseString.LongestDiverseString(2, 2, 1)); // length = 5
-            Console.WriteLine(longestDiverseString.LongestDiverseString(7, 1, 0)); // length = 5
-            Console.WriteLine(longestDiverseString.LongestDiverseString(4, 4, 3)); // length = 11
-            Console.WriteLine(longestDiverseString.LongestDiverseString(1, 3, 5)); // length = 9
-
+            //// 1405.Longest Happy String
+            //Console.WriteLine("1405. Longest Happy String");
+            //var longestDiverseString = new LC_S_LongestHappyString();
+            //Console.WriteLine(longestDiverseString.LongestDiverseString(1, 1, 7)); // length = 8
+            //Console.WriteLine(longestDiverseString.LongestDiverseString(2, 2, 1)); // length = 5
+            //Console.WriteLine(longestDiverseString.LongestDiverseString(7, 1, 0)); // length = 5
+            //Console.WriteLine(longestDiverseString.LongestDiverseString(4, 4, 3)); // length = 11
+            //Console.WriteLine(longestDiverseString.LongestDiverseString(1, 3, 5)); // length = 9
 
 
 
 
 
             #region Solved Problems
+
+            //// Is my friend cheating?
+            //Console.WriteLine("Is my friend cheating?");
+            //var removeNb = new CW_M_IsMyFriendCheating();
+            //Console.Write("Example 1: ");
+            //PrintListArray(removeNb.RemoveNb(26)); // [15, 21] [21, 15]
+            //Console.Write("Example 2: ");
+            //PrintListArray(removeNb.RemoveNb(100)); // empty
+            //Console.Write("Example 3: ");
+            //PrintListArray(removeNb.RemoveNb(1000003)); // [550320, 908655] [559756, 893250] [893250, 559756] [908566, 550320]
+            //// Solved April 7, 2020
+
+
+            //// 925. Long Pressed Name
+            //Console.WriteLine("925. Long Pressed Name");
+            //var isLongPressedName = new LC_S_LongPressedNames();
+            //Console.WriteLine($"Example 1: {isLongPressedName.IsLongPressedName("alex", "aaleex")}");  // True
+            //Console.WriteLine($"Example 2: {isLongPressedName.IsLongPressedName("saeed", "ssaaedd")}"); // False
+            //Console.WriteLine($"Example 3: {isLongPressedName.IsLongPressedName("leelee", "lleeelee")}"); // True
+            //Console.WriteLine($"Example 4: {isLongPressedName.IsLongPressedName("laiden", "laiden")}"); // True
+            //Console.WriteLine($"Example 5: {isLongPressedName.IsLongPressedName("pyplrz", "ppyypllr")}"); // False
+            //// Solved April 6, 2020
+
+
+            //// Double Cola
+            //Console.WriteLine("Double Cola");
+            //var whoIsNext = new CW_M_DoubleCola();
+            //string[] names = new[] { "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" };
+            //Console.WriteLine($"Example 1: {whoIsNext.WhoIsNext(names, 1)}"); // Sheldon
+            //Console.WriteLine($"Example 2: {whoIsNext.WhoIsNext(names, 52)}"); // Penny
+            //Console.WriteLine($"Example 3: {whoIsNext.WhoIsNext(names, 7230702951)}"); // Leonard
+            //Console.WriteLine($"Example 4: {whoIsNext.WhoIsNext(names, 63)}"); // Rajesh
+            //Console.WriteLine($"Example 5: {whoIsNext.WhoIsNext(names, 8)}"); // Leonard
+            //// Solved April 6, 2020
+
 
             //// 1404. Number of Steps to Reduce a Number in Binary Representation to One
             //Console.WriteLine("1404. Number of Steps to Reduce a Number in Binary Representation to One");
@@ -649,6 +677,15 @@ namespace CSharpPracticeExercises
         public static void PrintArray<T>(T[] array)
         {
             Console.WriteLine($"[{string.Join(", ", array)}]");
+        }
+
+        public static void PrintListArray(List<long[]> list)
+        {
+            foreach (long[] arr in list)
+            {
+                Console.Write($"[{string.Join(", ", arr)}] ");
+            }
+            Console.WriteLine();
         }
 
         #endregion
