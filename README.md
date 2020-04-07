@@ -31,7 +31,7 @@
 - [X] Valid Palindrome - February 11, 2020
 - [X] Valid Palindrome II - February 18, 2020
 - [ ] Valid Parentheses
-- [ ] Long Pressed Name
+- [X] Long Pressed Name - April 6, 2020
 - [ ] Longest Palindromic Substring
 - [X] Number of Steps to Reduce a Number in Binary Representation to One - April 4, 2020
 
@@ -244,7 +244,7 @@
   
   
 
-### Cracking the Coding Interview (CCI)
+### Interview
 -------------------------------
 
 - [X] Reverse Words in String - March 30, 2020
