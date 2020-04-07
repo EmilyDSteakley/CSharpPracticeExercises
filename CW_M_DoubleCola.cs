@@ -42,16 +42,53 @@ namespace CSharpPracticeExercises
             if (n <= names.Length)
                 return names[n - 1];
 
+            var iteration = n / names.Length;
+            var times = 1;
+            var level = 1;
+            while (iteration >= times)
+            {
+                times *= 2;
+                level++;
+            }
+            times /= 2;
+            level--;
 
+            var first = 1;
+            var previous = 5;
+            for (int i = 0; i < level - 1; i++)
+            {
+                first += previous;
+                previous *= 2;
+            }
+            
+            if (level == 1)
+            {
+                first = 6;
+                times = 2;
+            }
 
-            return "a";
+            return names[(n - first) / times];
         }
-        // Solved April 2, 2020
+        // Solved April 6, 2020
 
 
 
         // ---------------------------------------- Best Practices Solution on Codewars ----------------------------------------
-    
+        public static string WhoIsNextBest(string[] names, long n)
+        {
+            long x = 5;
+            long i = 1;
+
+            while (n > x)
+            {
+                n -= x;
+                x *= 2;
+                i *= 2;
+            }
+
+            return (names[(n - 1) / i]);
+        }
+
     } // CW_M_DoubleCola class
 
 } // CSharpPracticeExercises namespace
