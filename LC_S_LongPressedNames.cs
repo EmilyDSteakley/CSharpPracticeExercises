@@ -46,19 +46,56 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public bool IsLongPressedName(string name, string typed)
         {
+            if (String.Compare(name, typed) == 0)
+                return true;
+            if (name.Length > typed.Length)
+                return false;
 
-
-            
-                
-            
-            return false;
+            var input = new StringBuilder();
+            char previous = '0';
+            int i = 0, j = 0;
+            while (i < name.Length && j < typed.Length)
+            {
+                if (name[i] == typed[j])
+                {
+                    input.Append(typed[j++]);
+                    previous = name[i++];
+                }
+                else if(typed[j] == previous)
+                    j++;
+                else
+                    return false;
+            }
+            return name == input.ToString();
         }
-        // XXX ms <-- Beats XX.XX%
-        // Solved February XX, 2020
+        // 100 ms <-- Beats 8.26%
+        // Solved April 6, 2020
 
 
 
-        // ---------------------------------------- 400 ms Solution on LeetCode ----------------------------------------
+        // ---------------------------------------- 56 ms Solution on LeetCode ----------------------------------------
+        public bool IsLongPressedName56(string name, string typed)
+        {
+            int i = 0;
+            int j = 0;
+            while (j < typed.Length)
+            {
+                if (i < name.Length && name[i] == typed[j])
+                {
+                    i++;
+                    j++;
+                }
+                else if (i > 0 && name[i - 1] == typed[j])
+                {
+                    j++;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return i == name.Length;
+        }
 
     } // LC_S_LongPressedNames
 
