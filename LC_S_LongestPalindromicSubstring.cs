@@ -11,7 +11,8 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- Problem ----------------------------------------
 
         // 5. Longest Palindromic Substring
-        // Given a string s, find the longest palindromic substring in s.You may assume that the maximum length of s is 1000.
+        // Given a string s, find the longest palindromic substring in s.
+        // You may assume that the maximum length of s is 1000.
 
         // Example 1:
         // Input: "babad"
@@ -27,19 +28,6 @@ namespace CSharpPracticeExercises
         // ---------------------------------------- My Solution ----------------------------------------
         public string LongestPalindrome(string s)
         {
-
-            //// Old way to print an array
-            //foreach (var i in numbers)
-            //    Console.WriteLine(i);
-
-            //// New way to print an array
-            //Array.ForEach(numbers, Console.WriteLine);
-
-            //// Print an array like Java
-            //Console.WriteLine("[{0}]", string.Join(", ", numbers));
-
-
-
             //string S = "bababad";
             //int n = S.Length;
             //char[] arr = S.ToCharArray();
@@ -66,16 +54,17 @@ namespace CSharpPracticeExercises
             //        Console.WriteLine($"The palindrome is {palindrome}");
             //    }
             //    break;
-
-
-
-
-                return "incomplete";
-
             //}
-            // XXX ms <-- Beats XX.XX%
-            // Solved February XX, 2020
+
+
+
+            return "incomplete" + s;
+
+            
         }
+        // XX ms <-- Beats XX.XX%
+        // Solved February XX, 2020
+
 
 
         // ---------------------------------------- XXX ms Solution on LeetCode ----------------------------------------
