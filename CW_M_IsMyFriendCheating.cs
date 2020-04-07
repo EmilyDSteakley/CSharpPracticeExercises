@@ -50,7 +50,7 @@ namespace CSharpPracticeExercises
 
         // or
 
-        // in C-0=
+        // in C++
         // removNb(26) should return  ** an array of pairs {{15, 21}{21, 15}}**
         // tested by way of strings.
 
