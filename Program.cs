@@ -20,7 +20,16 @@ namespace CSharpPracticeExercises
             //Console.WriteLine(longestDiverseString.LongestDiverseString(4, 4, 3)); // length = 11
             //Console.WriteLine(longestDiverseString.LongestDiverseString(1, 3, 5)); // length = 9
 
-
+            // Snail
+            Console.WriteLine("Snail");
+            var snail = new CW_A_Snail();
+            int[][] snailTestArray =
+            {
+                new[] { 1, 2, 3 },
+                new[] { 4, 5, 6 },
+                new[] { 7, 8, 9 }
+            };
+            PrintArray(snail.Snail(snailTestArray));
 
 
 
