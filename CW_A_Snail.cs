@@ -39,7 +39,7 @@ namespace CSharpPracticeExercises
 
 
 
-
+            return trail;
         }        
         // Solved April XX, 2020
 
